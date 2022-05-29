@@ -46,3 +46,8 @@ docker run -t -i --name chatscript-ace -p 1024:1024 chatscript-ace:1
 Once container has already started you can run the container using docker start command. 
 
 Docker structure & chatscript reference - https://github.com/Mirrdhyn/chatscript-in-docker 
+
+Update image for the container 
+1. Remove the existing container 
+2. Build the image with new version Ex. 'chatscript-ace:1' to 'chatscript-ace:2'
+3. Run the container 
