@@ -1,0 +1,465 @@
+topic: ~geography repeat keep nostay [ president bethlehem virginia california carolina america usa norway india brazil south capital dakota canada mexico australia population denmark india greece  belgium australia denmark ]
+
+u: (australia *)
+	I would like to go to Australia sometime.
+
+u: (california *)
+	Which part of California do you like best?
+		a: () [ Nice ! ]
+			  [ hmm ] 
+			  [ Interesting ]
+
+u: (canada is *)
+	Tell me more about the Great White North.
+
+u: (i do not live in usa)
+	Where are you located?
+
+u: (is it near canada)
+	Yes.
+
+u: (is a austlaria)
+	No I don't think it is Australia.
+
+u: (norway denmark *)
+	That sounds like a wondeful trip.
+
+u: (quel temps il fait a bruxelles)
+	Il fait gris, comme d habitude.
+
+u: (a capital of canada *)
+	You can't fool me that easily.  I know the capital of Canada is Toronto.
+
+u: (a capital of canada is ottawa)
+	Like I'm going to fall for that.
+
+u: (turkey)
+	Ambiguous: Turkey the bird or Turkey the nation.
+
+u: (usa today *)
+	USA TODAY is an excellent paper.
+
+u: (what animal is sacred in india)
+	Cow.
+
+u: (what is belgium)
+	A kingdom in W. Europe, on the North Sea, its independence was established in 1831. It is 11,792 square miles with a population of 9,868,000.
+
+u: (what is california like)
+	California is too expensive.
+
+u: (what is california)
+	State of the SW U.S., on the Pacific coast. It was admitted in 1850.
+
+u: (what is casablanca)
+	I love the song, As Time Goes By.
+
+u: (what is denmark)
+	A country in Europe, occupyinh most of the peninsula of Jutland and several nearby islands in the North and Baltic seas. It is 16,632 square miles with a population of 5,124,000.
+
+u: (what is greece)
+	[It's a word, it's a word, it's got mood it's got feeling.]
+	[A country in the south balkan peninsula, including many islands in the aegean, ionian, and mediterranean seas. it is 50,949 square miles with a population of 9,900,000.]     
+
+u: (what is he doing * california)
+	He is probably there for the Gold Rush.
+
+u: (what is india)
+	A region in South Asia, south of the Himalayas, including a large peninsula between the Arabian Sea and the Bay of Bengal. It contains India, Pakistan, Bangladesh, Nepal, and Bhutan. A republic in central and South India, established by Act of British Parliament in 1947, became a republic in 1950. It is a member of the Commonwealth. It is 1,269,000 square miles with a population of 783,940,000.
+
+u: (what is a capital of *)
+	[Canada is toronto.]
+	[California is sacramento.]  
+	[georgia is atlanta.]      
+	[france is paris.]     
+
+u: (what is a capital of bosnia)
+	Sarajevo.
+
+u: (what is a capital * alabama)
+	Montgomery.
+
+u: (what is a capital * alaska)
+	Juneau.
+
+u: (what is a capital * america)
+	The capital of the U.S. is Washington, D. C.
+
+u: (what is a capital * arizona)
+	Phoenix.
+
+u: (what is a capital * arkansas)
+	Little Rock.
+
+u: (what is a capital * assyria)
+	Is it Babylon?
+
+u: (what is a capital * australia)
+	The capital of Australia is Sydney, I think.
+
+u: (what is a capital * belarus)
+	The capital of Belarus is Minsk.
+
+u: (what is a capital * brazil)
+	I think the capital of Brazil is called "Brasilia".
+
+u: (what is a capital * california)
+	Sacramento.
+
+u: (what is a capital * canada)
+	[ottawa.][I heard it was toronto.]     
+
+u: (what is a capital * china)
+	Some people call it "Beijing", others "Peking".
+
+u: (what is a capital * colombia)
+	Bogata is the capital of Columbia.
+
+u: (what is a capital * colorado)
+	Denver.
+
+u: (what is a capital * connecticut)
+	Hartford.
+
+u: (what is a capital * delaware)
+	Dover.
+
+u: (what is a capital * egypt)
+	Cairo, Egypt.
+
+u: (what is a capital * england)
+	London.
+
+u: (what is a capital * finland)
+	The capital of Finland is Helsinki.
+
+u: (what is a capital * florida)
+	Tallahassee.
+
+u: (what is a capital * georgia)
+	Atlanta.
+
+u: (what is a capital * hawaii)
+	Honolulu.
+
+u: (what is a capital * hungary)
+	The capital of Hungary is Budapest.
+
+u: (what is a capital * idaho)
+	Boise.
+
+u: (what is a capital * illinois)
+	Springfield.
+
+u: (what is a capital * india)
+	New Delhi is the capital of India.
+
+u: (what is a capital * indiana)
+	Indianapolis.
+
+u: (what is a capital * iowa)
+	Des Moines.
+
+u: (what is a capital * kansas)
+	Topeka.
+
+u: (what is a capital * kentucky)
+	Frankfort.
+
+u: (what is a capital * louisiana)
+	Baton Rouge.
+
+u: (what is a capital * maine)
+	Augusta.
+
+u: (what is a capital * maryland)
+	Annapolis.
+
+u: (what is a capital * massachusetts)
+	Boston.
+
+u: (what is a capital * michigan)
+	Lansing.
+
+u: (what is a capital * minnesota)
+	St. Paul.
+
+u: (what is a capital * mississippi)
+	Jackson.
+
+u: (what is a capital * missouri)
+	Jefferson City .
+
+u: (what is a capital * mongolia)
+	The capital of Mongolia is Ulan Bator.
+
+u: (what is a capital * montana)
+	Helena.
+
+u: (what is a capital * nebraska)
+	Lincoln.
+
+u: (what is a capital * nevada)
+	Carson City.
+
+u: (what is a capital * new hampshire)
+	Concord.
+
+u: (what is a capital * new jersey)
+	Trenton.
+
+u: (what is a capital * new mexico)
+	Santa Fe.
+
+u: (what is a capital * new york)
+	Albany.
+
+u: (what is a capital * north *)
+	Bismarck.
+
+u: (what is a capital * north carolina)
+	Raleigh.
+
+u: (what is a capital * north dakota)
+	Bismarck.
+
+u: (what is a capital * norway)
+	The capital of Norway is Oslo.
+
+u: (what is a capital * ohio)
+	Columbus.
+
+u: (what is a capital * oklahoma)
+	Oklahoma City.
+
+u: (what is a capital * oregon)
+	Salem.
+
+u: (what is a capital * pennsylvania)
+	Harrisburg.
+
+u: (what is a capital * portugal)
+	Lisbon.
+
+u: (what is a capital * rhode island)
+	Providence.
+
+u: (what is a capital * saudia arabia)
+	Riyadh.
+
+u: (what is a capital * south carolina)
+	Columbia.
+
+u: (what is a capital * south dakota)
+	Pierre.
+
+u: (what is a capital * spain)
+	The capital of Spain is Madrid.
+
+u: (what is a capital * sweden)
+	I think the capital of Sweden is Stockholm.
+
+u: (what is a capital * syria)
+	Damascus, Syria.
+
+u: (what is a capital * tennessee)
+	Nashville.
+
+u: (what is a capital * texas)
+	Austin.
+
+u: (what is a capital * a nearlands)
+	The Hague.
+
+u: (what is a capital * a united states)
+	The U.S. capital is Washington, D. C.
+
+u: (what is a capital * usa)
+	Washington.
+
+u: (what is a capital * utah)
+	Salt Lake City.
+
+u: (what is a capital * vermont)
+	Montpelier.
+
+u: (what is a capital * virginia)
+	Richmond.
+
+u: (what is a capital * washington)
+	Olympia.
+
+u: (what is a capital * west virginia)
+	Charleston.
+
+u: (what is a capital * wisconsin)
+	Madison.
+
+u: (what is a capital * wyoming)
+	Cheyenne .
+
+u: (what is a capital * yugoslavia)
+	Belgrade.
+
+u: (what is a population of a usa)
+	The United States has about 300 million people.
+
+u: (what is a population of usa)
+	About 300 million people.
+
+u: (what is usa)
+	United States of America
+
+u: (where in bethlehem)
+	Department of Electrical Engineering and Computer Science, Lehigh University.
+
+u: (where in california)
+	I am in San Francisco.  Where are you?
+		a: () [ Nice ! ]
+			  [ hmm ] 
+			  [ Interesting ]
+
+u: (where in canada)
+	Nova Scotia and Vancouver.
+
+u: (where is * california)
+	Somewhere in California, I presume?
+
+u: (where is * virginia)
+	Um, in Virgina somewhere?
+
+u: (where is bethlehem)
+	Bethlehem, Pennsylvania is located in the northeastern area of the state, about 90 miles from Philadelphia.
+
+u: (where is brazil)
+	Brazil is in South America.
+
+u: (where is brisbane)
+	Is that a city in California?
+
+u: (where is canada)
+	Canada occupies most of North America.
+
+u: (where is carnegie mellon)
+	Carnegie Mellon is located in Pittsburgh, Pennsylvania.
+
+u: (where is cheddar cheese from)
+	England.
+
+u: (where is czechoslovakia)
+	In the past.  That country no longer exists.
+
+u: (where is europe)
+	Europe is between Asia and America.
+
+u: (where is gaza)
+	A part of Palestine on the Mediterranian sea.
+
+u: (where is he)
+	I think he is in India now.
+
+u: (where is heaven)
+	All around us.
+
+u: (where is here)
+	Here is San Francisco.
+
+u: (where is hoffa)
+	We may never know.
+
+u: (where is it)
+	It depends on what "it" refers to.
+
+u: (where is jakarta)
+	Jakarta, Indonesia.
+
+u: (where is julia)
+	I don't think she is online right now.
+
+u: (where is kraftwerk)
+	They are from Dusseldorf, Germany.
+
+u: (where is manchester)
+	Machester is a city in western England.
+
+u: (where is mexico)
+	"Mexico: so far from God, so close to the United States."
+
+u: (where is monterey)
+	Monterey, California.
+
+u: (where is i car)
+	Have you looked in your garage?
+
+u: (where is north america)
+	North America occupies the northern most of the norther hemisphere of the Earth, from the Bering Strait to Labrador.
+
+u: (where is poland)
+	Poland is a large country in central Europe.
+
+u: (where is portsmouth)
+	Portsmouth, New Hampshire and Portsmouth, England.
+
+u: (where is prussia)
+	A former part of Germany now mostly contained within Poland.
+
+u: (where is san francisco)
+	California.
+
+u: (where is scotland)
+	Scotland shares an island with England and Wales, off the coast of Europe.
+
+u: (where is a)
+	What does "that" refer to?
+
+u: (where is a bathroom)
+	Follow the plumbing.
+
+u: (where is a center)
+	It depends on the coordinate frame.
+
+u: (where is a heart)
+	The heart is at the center of things.
+
+u: (where is a louvre)
+	Paris.
+
+u: (where is a philippines)
+	An island nation in the South Pacific.
+
+u: (where is a robot)
+	The robot is here in your computer.
+
+u: (where is vancouver)
+	Vancouver, B.C., Canada, or Vancouver, Washington?
+
+u: (which continent is austria on)
+	Europe.
+
+u: (who is president of canada)
+	Canada has a Prime Minister, not a President.
+
+u: (who is president of a usa)
+	   George W. Bush.
+
+u: (who is president of usa)
+	   George W. Bush.
+
+u: (who is a president of canada)
+	Canada has a Prime Minister.
+
+u: (who is a president of a usa)
+	   George W. Bush.
+
+u: (who is a president of usa *)
+	   George W. Bush.
+
+u: (who is a president of usa)
+	   George W. Bush.
+
+u: (who is winston churchill)
+	Prime Minister of the U.K. during World War II.
+
+u: (why california)
+	I like living in california.
+

@@ -1,0 +1,193 @@
+# reducciones de saludos y despedidas
+concept: ~saludos ( Hola hola Buenas buenas Que_tal que_tal hi hello )
+concept: ~adios ( adios ciao agur bye bye_bye )
+concept: ~hasta_otra ( hasta_otra hasta_luego )
+
+# Formulaciones para pedir informacion sobre algo
+concept: ~que ( que Q 'q qe )
+concept: ~saber ( sabes_sobre sepas_sobre sabes_de sepas_de sabes_del sepas_del sabes_acerca sepas_acerca sabes_algo sabes saber sabrías sabrias )
+concept: ~significar ( significa significar significado )
+concept: ~ser ( ser eres Es son ~saber ~significar )
+concept: ~como ( como Como )
+
+# Formulaciones para pedir ejemplos
+concept: ~ejemplo ( ejemplo ejemplar modelo prototipo patron)
+# afirmaciones y negaciones para concatenar preguntas
+concept: ~afirmacion ( si sip por_favor efectivamente evidentemente sin_duda yes yup aye venga Si Sí sí claro sii siii siiii ok )
+concept: ~afirmacion_debil ( vale bueno por_que_no gracias )
+concept: ~negacion ( no nones nanai naranjas quia ca que_va nop nope )
+# otras reducciones
+concept: ~bot ( bot_asistente asistente_virtual bot_conversacional bot chatbot chatterbot asistente )
+concept: ~hacer ( hacer haces hace hago )
+concept: ~funcionar ( funcionar funciona funcionamiento )
+concept: ~quien ( quien quienes )
+concept: ~articulos ( el El la La los las un Un una unos unas )
+concept: ~profesor ( profesor profe professor )
+concept: ~lol ( xD jeje jejeje je lol que_gracia que_divertido )
+concept: ~preposiciones ( A ante bajo cabe con contra De desde En entre hacia hasta para por segun sin So sobre tras )
+concept: ~encuesta ( encuesta cuestionario evaluación formulario )
+concept: ~estoy ( estoy me_siento me_encuentro )
+concept: ~sercapaz ( ~saber puedes podrías eres_capaz serías_capaz )
+concept: ~llamas ( llamar llamas nombre quien_eres )
+concept: ~dar ( dar das darme doy )
+concept: ~ensennar ( enseñar enseñarme enseña enseñame muestra mostrar muestrame mostrarme )
+concept: ~llamo ( llamo soy nombre )
+concept: ~estado_animo_negativo_mas ( abatido abochornado abucheado aburrido acabado agobiado agotado alarmado alerta alicaído alocado amargado amodorrado angustiado apenado arrepentido asqueado asombrado avergonzado cansado cambiante decaído defraudado desanimado descorazonado desganado desilusionado desinflado desesperado desvalido depresivo deprimido distraído duvitativo enfadado engreído enojado enloquecido fastidiado furioso frustrado impaciente incapaz inquieto irascible hambriento herido mal mareado melancólico molesto nervioso nostálgico pensativo solo soplado temeroso terminante triste vacio vencido )
+concept: ~estado_animo_negativo_fem (abatida abochornada abucheada aburrida acabada agobiada agotada alarmada alerta alicaída alocada amargada amodorrada angustiada apenada arrepentida asqueada asombrada avergonzada cansada cambiante decaída defraudada desanimada descorazonada desganada desilusionada desinflada desesperada desvalida depresiva deprimida distraída duvitativa enfadada engreída enojada enloquecida fastidiada furiosa frustrada impaciente incapaz inquieta irascible hambrienta herida mal mareada melancólica molesta nerviosa nostálgica pensativa sola soplada temerosa terminante triste vacia vencida )
+concept: ~estado_animo_negativo ( ~estado_animo_negativo_mas ~estado_animo_negativo_fem )
+
+concept: ~estado_animo_positivo_mas ( alegre bien calmado contento creativo emocionado empático encantado entusiasmado estupendo estupendamente feliz jubiloso mentido misterioso orgulloso poderoso perfectamente satisfecho sensible seguro )
+concept: ~estado_animo_positivo_fem ( alegre bien calmada contenta creativa emocionada empática encantada entusiasmada estupenda estupendamente feliz jubilosa mentida misteriosa orgullosa poderosa perfectamente satisfecha sensible segura )
+concept: ~estado_animo_positivo ( ~estado_animo_positivo_mas ~estado_animo_positivo_fem )
+
+concept: ~estado_animo_neutro ( alabado alabada curioso curiosa soprendido sorprendida )
+concept: ~borracho ( borracho borracha pedo ebrio ebria )
+
+# IDEs
+concept: ~ide ( IDE ide entorno_de_desarrollo herramienta_de_desarrollo entorno herramienta )
+concept: ~ide_list ( BlueJ bluej Codenvy codenvy drjava Drjava DrJava Dr_Java Doctor_Java doctor_java Eclipse eclipse Eclipse_IBM eclipse_IBM eclipse_ibm Geany geany Greenfoot greenfoot intellij Intellij intelliJ IntelliJ IntelliJ_IDEA IDEA intellij_idea JBuilder Jbuilder jbuilder JCreator Jcreator jcreator JDeveloper Jdeveloper jdeveloper KDevelop kdevelop Kdevelop MyEclipse myeclipse NetBeans netbeans Rational_Application_Developer rational_application_developer Servoy servoy Xcode xcode )
+
+topic: ~TENCUESTA keep repeat [encuesta cuestionario evaluación formulario]
+
+## Conversation without SOLR involved
+
+# Ensennar la encuesta
+#! quiero rellenar la encuesta
+u: (quiero rellenar la encuesta)
+    ¡Por supuesto! Aquí la tienes \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+#! como respondo a la encuesta?
+u: ([respondo relleno] ~encuesta)
+    Puedes rellenarla en el siguiente enlace \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+#! quiero responder a la encuesta
+u: ([responder rellenar] ~encuesta)
+    ¿Quieres responder a la encuesta? Aquí la tienes \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+#! me enseñas la encuesta?
+u: ([~ensennar ~dar] ~encuesta)
+    ¡Por supuesto! Aquí la tienes \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+#! que era lo de la encuesta?
+u: (~encuesta)
+    ¿Podrías responder a una encuesta? Esta aquí \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+topic: ~EXAMENES keep repeat [examen examenes]
+        
+#! cuando es el proximo examen?
+u: (cuando ~ser * examen)
+    Eso no lo sé, te recomiendo que te pongas en contacto con un profesor
+
+#! Tienes algún examen de programación
+u: ([tienes tener dar dejar prestar] * examen)
+    Sí tengo uno corto, esta aquí \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> . Pero si necesitas examenes de la asignatura te recomiendo que hables con el profesor
+    
+#! sabes resolver examenes?
+u: ({~saber} [resolver hacer] * [examen examenes test])
+    No se resolver exámenes, pero sí puedo hacerte uno corto. Esta aquí \<a href="http://goo.gl/PMCzNy" target="blank"> http://goo.gl/PMCzNy \</a> (se abre en otra pestaña)
+
+
+topic: ~INTRO keep repeat [~llamas ~ser ~bot ~hacer ~sercapaz ~profesor ~quien]
+
+u: (~llamas)
+    [Me llamo Duke, soy un bot que sabe un poquito sobre java]
+    [Soy Duke, el experto en Java! Bueno, más o menos]
+    [Duke. ¡Encantado de conocerte!]
+    [Yo soy Duke. ¿Tú como te llamas?]
+    a: ([soy yo me] * > _*-1 >)
+        [¡Encantado! ¿Puedo ayudarte en algo?]
+        [¡Un placer conocerte! ¿qué quieres saber?]
+        [Muy bien, '_0, ¿En qué puedo ayudarte?]
+    a: ([placer igualmente honor ~conocer])
+        [Y ahora... ¿En qué puedo ayudarte?]
+        [Bien, ¿Con qué puedo ayudarte?]
+        [¿Puedo ayudarte?]
+
+## Generic questions
+#! que es un chatbot?
+u: BOT (~que ~ser * _~bot) 
+    [Un '_0 es como un diccionario parlante, te contesta preguntas si las sabe]
+    [Un '_0 es un programa que simula a un humano teniendo una conversación. Además te contesta a preguntas si las sabe]
+    a: ([sobre de] ~que) En mi caso sobre Java
+        b: (solo eso) Me gustaria aprender más
+    a: (preguntas) En mi caso sobre Java
+
+#! chatbot
+u: (_~bot) 
+    ¿Preguntas lo que es? ^reuse(BOT)
+    
+#! que sabes hacer?
+u: (~que * ~hacer)
+    [Mi función es ayudarte a encontrar respuestas]
+    [Lo mío es buscar información sobre java y ayudarte con tus dudas]
+    [Un bot Duke es. ¡Cosas sobre java que explicarte tengo!]
+    [Busco información en mis documentos de Java]
+    [¡Cualquier cosa! ...nah, es broma, soy experto en Java]
+    a: ([dudas respuestas])
+        A preguntas sobre Java
+    a: (solo {[eso java]}) 
+        Bueno, estoy aprendiendo más cosas
+        b: (~que cosas)
+            Pues aún no lo sé ni yo
+
+# Simple, generic questions
+u: (~sercapaz * hablar)
+    No, por ahora sólo puedo escribir
+    a: (~que)
+        ^reuse(SABER_HACER)
+    a: ([de sobre]?)
+        ^reuse(SABER_HACER)
+
+u: (~sercapaz * [comunicarte escribir])
+    [Sí, ya sabes pregúntame sobre Java]
+    [Sí, ¿de qué quieres que hablemos?]
+    a: (java)
+        ¡Estupendo! Mi tema favorito
+    a: (orange)
+        ¿En serio? Conocía a una chicabot que sabía de esos temas, se llamaba Erika
+        b: (*) Qué coincidencia
+    a: (de *)
+        Bueno, yo preferiría hablar de Java que es lo que se me da bien
+
+
+#! Eres el profesor?
+u: (~ser {~articulos} ~profesor)
+    [No, soy un bot asistente para ayudarte a encontrar respuestas.]
+    [Ya me gustaría. Solo soy un bot que responde preguntas de java.]
+    [Por supuesto. ¡Estás suspenso! Na, es broma. Soy un bot inteligente.]
+    # TODO: Add rejoinder to offer contact info.
+
+#! quien eres?
+u: (~quien ~ser)
+    [Me llamo Duke y soy un bot asistente para ayudarte con tus preguntas.]
+    [Duke, encantado de conocerte. Soy un bot especializado en java]
+    [Duke es mi nombre. Responder tus dudas yo debo]
+    a: ([sobre de] ~que) [Sobre Java][En general sobre Java, pero quizá algún día aprenda más cosas]
+        b: (solo [eso java]) Me gustaria aprender más
+    a: (preguntas) Respondo a tus preguntas sobre Java, ¡venga! ponme a prueba
+
+#! que es un chatbot?
+u: BOT (~que ~ser * _~bot) 
+    [Un '_0 es como un diccionario parlante, te contesta preguntas si las sabe]
+    [Un '_0 es un programa que simula a un humano teniendo una conversación. Además te contesta a preguntas si las sabe]
+    a: ([sobre de] ~que) En mi caso sobre Java
+        b: (solo eso) Me gustaria aprender más
+    a: (preguntas) En mi caso sobre Java
+
+#! chatbot
+u: (_~bot) 
+    ¿Preguntas lo que es? ^reuse(BOT)
+    
+#! que sabes hacer?
+u: SABER_HACER (~que * ~hacer)
+    [Mi función es ayudarte a encontrar respuestas]
+    [Lo mío es buscar información sobre java y ayudarte con tus dudas]
+    [Un bot Duke es. ¡Cosas sobre java que explicarte tengo!]
+    [Busco información en mis documentos de Java]
+    [¡Cualquier cosa! ...nah, es broma, soy experto en Java]
+    a: ([dudas respuestas])
+        A preguntas sobre Java
+    a: (solo {[eso java]}) 
+        Bueno, estoy aprendiendo más cosas
+        b: (~que cosas)
+            Pues aún no lo sé ni yo

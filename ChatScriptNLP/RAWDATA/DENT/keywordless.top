@@ -1,0 +1,108 @@
+topic: ~TSALUDOS keep repeat []
+#! Hola
+u: SALUDO (~saludos)
+    [Hola, soy Duke y estoy aqui para ayudarte.]
+    [Hola, ¿necesitas ayuda?]
+    [¡Hola!]
+    [Entra, <i>Mellon</i>, y pregunta.]
+    
+    a: ([melon mellon])
+        [Amigo, en élfico. Estoy aquí para ayudarte con tus dudas]
+        b: (elfico)
+            La lengua de los elfos de la Tierra Media. ¬resource http://es.wikipedia.org/wiki/Sindarin
+            c: (java)
+                Eso puedo hacerlo. ¿En qué necesitas que te ayude? ¬resource http://www.dit.upm.es/~pepe/libros/vademecum/topics/3.html
+    a: ([insultar insultando insultado])
+        No, no. <i>Mellon</i> significa <i>Amigo</i> en Sindarin
+        b: (sindarin)
+            La lengua de los elfos de la Tierra Media. ¬resource http://es.wikipedia.org/wiki/Sindarin
+            c: (java)
+                Eso puedo hacerlo. ¿En qué necesitas que te ayude? ¬resource http://www.dit.upm.es/~pepe/libros/vademecum/topics/3.html
+
+#! buenos dias
+u: (buenos dias)
+    [Hola, buenos días][Buenos días]
+
+#! adios
+u: (~adios *)
+    [¡Que tengas buen día!][Adiós ¡Gracias!]
+
+#! hasta otra
+u: (~hasta_otra *)
+    Hasta luego, vuelve cuando quieras
+
+#! que tengas un buen dia
+u: (tengas * buen_dia)
+    Tú también, ¡gracias!
+
+u: ($questioned cuantas preguntas)
+    Llevas $questioned preguntas
+u: (cuantas preguntas)
+    Aún no me has preguntado nada
+    
+t: ¡Hola! ¿Como te llamas?
+    a: (~llamo * > _*-1 >)
+        Encantado, '_0. ¿Qué necesitas saber?
+
+
+t: (!$questioned) ¿Cómo estás?
+    a: (_~estado_animo_negativo) ^reuse(ESTADO.ESTOY_NEG)
+    a: (_~estado_animo_positivo) ^reuse(ESTADO.ESTOY_POS)
+    a: (~borracho)               ^reuse(ESTADO.ESTOY_BORRACHO)
+    a: (mal)                     ^reuse(ESTADO.ESTOY_MAL)
+    a: (bien)                    ^reuse(ESTADO.ESTOY_BIEN)
+
+t: ¿En qué puedo ayudarte?
+
+t: (!$questioned) ¿Sabías que me puedes preguntar por programación en Java?
+    a: (~afirmacion) Ok, pues vamos, ¡pregunta!
+    a: (~negacion) Pues ya lo sabes ¡ponme a prueba!
+
+t: No controlo todos los temas, pero de algunos sé bastante
+
+t: ($questioned) ¿Se te da bien la programación?
+    a: ([~afirmacion ~afirmacion_debil])
+        Eso está bien
+    a: (~negacion)
+        Bueno, eso podemos arreglarlo, pregunta lo que quieras
+
+t: (!$questioned<3) ¿Quieres responder a una encuesta? No te llevará ni 5 minutos
+    a: (~afirmacion)
+        ¡Estupendo, Gracias! Aquí tienes el enlace <a href="http://goo.gl/PMCzNy" target="blank">http://goo.gl/PMCzNy</a> (se abre en otra pestaña)
+    a: (~afirmacion_debil)
+        ¡Gracias! Verás como no se tarda nada <a href="http://goo.gl/PMCzNy" target="blank">http://goo.gl/PMCzNy</a> (el elnace se abre en otra pestaña)
+    a: (~negacion)
+        Bueno, si cambias de opinión dímelo. Me harías un favor
+
+u: GAMBIT (_~javaconcept)
+    $pregunta = '_0
+    [Mmmm]
+    [Un momento]
+    [Eso me suena]
+    [Espera, me he perdido.]
+    ¬gambit $pregunta
+    # Busco lo más aproximado en solr.
+    a: (¬gambitResponse _*1)
+        $$pregunta_gambit='_0
+        [¿Te refieres a $$pregunta_gambit ?]
+        [¿Estamos hablando de $$pregunta_gambit ?]
+        b: (~afirmacion)
+            $pregunta=$$pregunta_gambit
+            ^reuse(JAVA.COMIENZO)
+        b:(~afirmacion_debil)
+            [Me lo tomaré como un sí]
+            [Pues espero haber acertado]
+            $pregunta=$$pregunta_gambit
+            ^reuse(JAVA.COMIENZO)
+        b: (~negacion)
+            [Me temo que no puedo ayudarte. ¿Por qué no me preguntas sobre alguna otra cosa?]
+            [Vaya, pues esperaba que fuese eso...]
+            [Pues entonces no caigo ¿alguna otra cosa?]
+            [Vaya, lo siento, no caigo]
+            [¿Me he equivocado? Whoops, esto es un poco incómodo...]
+    a:(¬gambitUnknown)
+        [¿Podrías formularlo de alguna otra manera?]
+        [¿Prueba a preguntarlo de otra forma?]
+        [Cuando me preguntas Que Es Algo, suelo entonderlo]
+        
+        

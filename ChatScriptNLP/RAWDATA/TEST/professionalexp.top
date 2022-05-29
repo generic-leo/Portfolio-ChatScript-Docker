@@ -1,0 +1,10 @@
+topic: ~myprofessional_experience keep repeat [ ~job_cat ]
+
+t: THIS JOB TOPIC IS PENDING 
+
+# THIS RESETS ALL THE RULES AND POP OUT FROM TOPIC 
+t: DEFAULT() 
+	^keep() 
+	^reset(topic ~myprofessional_experience)
+	^poptopic(~myprofessional_experience)
+	^gambit(~introductions)

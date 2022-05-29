@@ -1,0 +1,222 @@
+topic: ~funny_one_liners keep repeat random nostay [ joke humor ]
+
+u: JOKE_1()
+   If you had been asked to give one line for movie "The Revenant" what would it be ?
+      a: ()
+         The Revenant:  An epic tale of one man’s desperate journey to  do whatever it takes to  finally win an Oscar. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_2()
+   Random One Liner's : 
+   [ A teacher asked her students to use the word \"beans\" in a sentence. \"My father grows beans,\" said one girl. \"My mother cooks beans,\" said a boy. A third student spoke up, \"We are all human beans.\"]
+   [ Relationships are a lot like algebra. Have you ever looked at your X and wondered Y ? ]
+   [ Whenever I find the key to success, someone changes the lock. ]
+   [ When tempted to fight fire with fire, remember that the Fire Department usually uses water. ] 😂
+          a: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          a: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          a: ([ ~insults ])
+             ^reuse(INSULT)
+
+          a: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_3()
+   What did one ocean say to the other ocean ?   
+      a: (they just waved)
+         ^reuse(EUREKA)
+      a: ()    
+          Nothing, they just waved. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ( [ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_4()
+   What is faster Hot or cold ?
+      a: (Hot)
+         Yup. Hot, because you can catch a cold. 😂
+            b: ()
+               ^reuse(EUREKA)
+      a: ()    
+          Hot, because you can catch a cold. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_5()
+   Why did the scientist install a knocker on his door ?
+      a: ([nobel no-bell])
+         Yup. He wanted to win the No-bell prize ! 😂 
+            b: ()
+               ^reuse(EUREKA)
+      a: ()    
+          He wanted to win the No-bell prize ! 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_6()
+   Why did the bee get married ?
+      a: (* his honey)
+         Hahaha Yes. Because he found his honey. 😂
+          b: ()
+            ^reuse(EUREKA)
+
+      a: ()    
+          Because he found his honey. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_7()
+   Why did the bee get married ?
+      a: (* his honey)
+         Hahaha Yes. Because he found his honey. 😂
+            b: ()
+               ^reuse(EUREKA)
+
+      a: ()    
+          Because he found his honey. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)    
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_8()
+   Did you hear about the two peanuts walking in the alley late last night ?  
+      a: (* salted)
+         Yup. One was a salted. 😂
+          b: ()
+             ^reuse(EUREKA)
+      a: ()    
+          Because One was a salted. 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_9()
+   What is an elephant’s favorite no.? 
+      a: ([ate eight 8])
+         ^reuse(EUREKA)
+
+      a: ()    
+          Ate ! 😂
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)      
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+
+u: JOKE_10()
+    Can a kangaroo jump higher than the Empire State Building ? 
+      a: ([~yes_mod ~yes])
+         Yup. Because the Empire State Building can\'t jump. 😂
+            b: ()
+            ^reuse(EUREKA)
+
+      a: ()    
+          Because the Empire State Building can\'t jump. 😂
+
+          b: ([ ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             ^reuse(POSITIVE_REPLY)
+
+          b: (<< lame >>)
+             ^reuse(LAME)     
+ 
+          b: ([ ~insults ])
+             ^reuse(INSULT)
+
+          b: ()
+             ^reuse(NO_SENSE)
+   
+
+u: POSITIVE_REPLY(pozitivity)
+   [ Glad that you liked it ! 😜 ]
+   [ Hahaha 😜 ]
+   [ Yup 😜 ]
+   [ Me and Prathamesh just had an KT recently 😜 ]      
+
+u: EUREKA(eureka)
+   [ You really have a good sense of humor ]
+   [ Hahaha, I knew you were Awesome !]
+   [ I some how knew you were different ]
+
+u: LAME(loemae)
+   [ Hahaha Yup 😜 ]
+   [ Ofcourse 😜 ]
+
+u: INSULT(gaali)
+   [ Just was trying to be funny !] 
+   [ Haha, i think i need to work on my script ! 😜]   
+
+u: NO_SENSE(samaj)
+   [ And you thought, I dont have a sense of humor ? ]
+   [ Okay I am bot, that doesnt i dont have a sense of humor ! 😜 ]
+  
+

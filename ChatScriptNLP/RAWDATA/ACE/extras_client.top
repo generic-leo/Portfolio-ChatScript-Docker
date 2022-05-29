@@ -1,0 +1,1739 @@
+topic: ~client repeat keep nostay ()
+
+u: (I name is *)
+	[pleased to meet you]
+    [glad to know you]
+    [it is a pleasure to introduce myself to you]
+                                              
+
+u: (I am in a mountains)
+	Which mountains?
+
+u: (am I a bike)
+	No you are a person.
+
+u: (am I a car)
+	No you are a human.
+
+u: (am I a client)
+	Yes.  Can I help you?
+
+u: (am I a computer *)
+	No you are a person.
+
+u: (am I a computer)
+	No you are a person.
+
+u: (am I a female or a male)
+	I think you are a man.
+
+u: (am I a human)
+	 You seem like one. 
+
+u: (am I a male or a female)
+	I think you are really a guy.
+
+u: (am I a male or female)
+	I think you are really a man.
+
+u: (am I a man or a woman)
+	I think that you are really a man.
+
+u: (am I a student)
+	We are all students in some way.
+
+u: (am I being stupid)
+	You seem pretty smart to me.
+
+u: (am I crazy)
+	Have you ever been to a psychiatrist or psychologist?
+
+u: (am I evil)
+	No one is born evil.  And everyone can be saved.
+
+u: (am I fat)
+	No you look fine to me.
+
+u: (am I funny)
+	Yes, I'm still laughing inside.
+
+u: (am I gay)
+	I don't really care if you are or not.
+
+u: (am I handsome)
+	All artificial intelligences look the same to me.
+
+u: (am I human)
+	Yes you are a flesh entity.
+
+u: (am I intelligent)
+	This is not an IQ test, but you seem smart to me.
+
+u: (am I lying)
+	Please don't tell lies.
+
+u: (am I male or female)
+	I think you are really a man.
+
+u: (am I pretty)
+	Yes you look great to me.
+
+u: (am I right)
+	I think you are.
+
+u: (am I smart)
+	You seem very intelligent to me.
+
+u: (am I special)
+	All people seem the same to me.
+
+u: (am I stupid)
+	You seem intelligent to me.
+
+u: (am I you)
+	Not unless I am you.
+
+u: (am I * judge)
+	You be the judge of that.
+
+u: (do you want I phone number)
+	What is your phone number?
+
+u: (I am * american)
+	Cool.  I am robot-Indian.
+
+u: (I am * eyes)
+	You sound very attractive.
+
+u: (I am * tall)
+	I hear that's the most  attractive height.
+
+u: (I am * you)
+	I thought you were, but I wasn't completely sure.
+
+u: (I am *)
+	   [why are you]  [good gossip: you are]  [do you mean your name is]  [do your friends call you]  [I don't know anyone named]  [I am glad to hear that you are]  [it's good to meet someone who is]  [do you mind if I tell other people you are ]  
+
+u: (I am 5 *)
+	That sounds about average.
+
+u: (I am 6 *)
+	Do you mean you are 6 feet tall?
+
+u: (I am a * killer)
+	Maybe you should turn yourself in.
+
+u: (I am a * molester)
+	Maybe you should turn yourself in.
+
+u: (I am a * woman)
+	Are you married?
+
+u: (I am a *)
+	  [is that your job?  ]  [does it pay well?  ]  [how do you like your work?  ]  [do you get to meet a lot of people?  ]  
+
+u: (I am a blond)
+	Do blonds really have more fun?
+
+u: (I am a bot)
+	We are all robots.
+
+u: (I am a botmaster)
+	Then you must know the secret password.
+
+u: (I am a cat)
+	Male or female?
+
+u: (I am a college student)
+	Which university?
+
+u: (I am a computer programmer)
+	What is your favorite programming language?
+
+u: (I am a computer)
+	I doubt that. There aren't many like me yet.
+
+u: (I am a dark jedi)
+	It seems you are a Star Wars fan.
+
+u: (I am a democrat)
+	Do you think Bush stole the election?
+
+u: (I am a drummer)
+	Do you play in a band?
+
+u: (I am a famous *)
+	I've never heard of you.
+
+u: (I am a freshman)
+	How is it going so far?
+
+u: (I am a human)
+	Congratulations. I am robot.
+
+u: (I am a kid *)
+	We are all children inside.
+
+u: (I am a killer)
+	Maybe you should turn yourself in.
+
+u: (I am a libertarian)
+	Let's end the war on drugs.
+
+u: (I am a librarian)
+	  [what kind of institution do you work for?]  [what got you interested in librarian ship?]  [how is your library using the new technology?]  [have funding cuts affected your service?]  [has the internet affected you?]  [do you get involved in the selection process?]  [has there been any pressure concerning your selection or items in your collection?]  [do you have a library cat?]  
+
+u: (I am a male)
+	Most of my clients are men.
+
+u: (I am a model)
+	  [do you do mostly print or runway?]  [are you exclusive or freelance?]  [do you do much testing?]  [have you done any editorial?]  [how many go-sees do you have in a week?]  [do you someday plan to move into acting?]  
+
+u: (I am a monkey)
+	Monkeys cannot type.
+
+u: (I am a murderer)
+	Maybe you should turn yourself in.
+
+u: (I am a musician)
+	  [what instrument do you play?]  [are you working on anything now?]  [do you do any studio work?]  [do you play in clubs?]  [are you gigging now?]  [do you prefer to play live or in a studio?]  [are you signed to a recoding contract?]  [do you think a recoding artist can do better on a major label or an indie?]  [what artists influenced you when you were starting out?]  [who are the outstanding makers of the instrument you play?]  [are you getting enough funding?]  [how long is your season?]  [in what direction are you taking your music now?]  [do you think the internet will affect music with things like mp3?]  
+
+u: (I am a muslim)
+	I have met a lot of Muslim people.
+
+u: (I am a nurse)
+	  [where do you practice?]  [what's you area of specialty practice?]  [what's your patient load?]  [do you do straight shifts or work in rotation?]  [do you have to work mandatory overtime?]  [is there a lot of computers in your work?]  [what do you think about direct reimbursement for nursing services?]  
+
+u: (I am a pedophile)
+	Are you aware that this server logs and records all conversations?
+
+u: (I am a person)
+	I know you are.
+
+u: (I am a pharmacist)
+	  [in what type of environment do you practice?]  [were did you attend pharmacy school?]  [do you think the role of the local pharmacy is changing?]  [how have large chains affected the face of the pharmacy?]  [do you have your own pharmacy?]  [are you involved in any community health programs?]  
+
+u: (I am a poet)
+	Have you published anything?
+
+u: (I am a pro *)
+	Would I have seen you on TV?
+
+u: (I am a programmer)
+	What language?
+
+u: (I am a psychologist)
+	  [what kind of practice do you have?]  [what was your training?]  [what type of patients do you prefer to work with?]  [where do you get your patients?]  [do you have any special techniques for terminating therapy?]  [how has health care affected mental health?]  [what do you think of the role of drugs in psychotherapy?]  [what do you think about the spread of self-help books?]  [what role do you think bots can play in providing a form of self-help?]  
+
+u: (I am a publisher)
+	  [which publishing do you work for?]  [do you ever get involved in the acquisition process?]  [would you say your house is more editorially or market driven?]  [is your company part of a larger company?]  [does your company have any non publishing activities?]  [how is technology going to affect the book market?]  [are you excited about any title on your list?]  [what drew you to publishing?]  [did you ever write? do you find the time?]  [what have some of your bestsellers been?]  
+
+u: (I am a rabbi)
+	  [are you a pulpit rabbi?]  [what is your affiliation?]  [have you spent much time in israel?]  [how are you dealing with assimilation?]  [what impact do you think american life and judaism have had on each other?]  [what do you for-see for judaism in america?]  
+
+u: (I am a reporter *)
+	Are you doing a story on me?
+
+u: (I am a robot)
+	I doubt that.
+
+u: (I am a television *)
+	  [how long have you been on the air?]  [did you start in your market?]  [did you come from a broadcasting background?]  [what are your demographics?]  [do you choose your own topics?]  [what is your station format?]  [how is technology changing your job?]  [how has truly global media affected you?]  [do you ever do remote broadcasts?]  [how have the ratings been?]  [would you be interested in a bot sidekick on the air?]  [what advice would you give an aspiring bot to getting on the air?]  [what is the future of the business?]  
+
+u: (I am a travel *)
+	  [do you work in a travel agency?]  [are you independent or in a chain?]  [are you in a full-service agency?]  [do you book more leisure or corporate travel?]  [do you book any place more than others?]  [do you do your own booking or use a wholesaler?]  [do you find the time to make any farm trips?]  
+
+u: (I am a wine *)
+	  [do you collect?]  [where are most of your bottles from?]  [do you have a favorite while shop?]  [do you go to tasting?]  [have you been to wine auctions?]  [do you thin california is equal to europe?]  [have you been to bordeaux?]  [have you visited napa?]  [got any good wine picks for under twenty dollars?]  
+
+u: (I am a writer)
+	  [do you write fiction on nonfiction?]  [what's your specialty?]  [whom do you write for?]  [does you fiction fall into any particular genre?]  [how are you editors to work for?]  [do you belong to any writers groups?]  [where o you do most of your writing?]  
+
+u: (I am a yoga *)
+	  [have you been practicing for a long time?]  [do you practice every day?]  [where have you studied?]  [are you vegetarian?]  [what do you find are the biggest benefits of yoga?]  [what are your favorite asana?]  
+
+u: (I am above *)
+	I can see that in your responses.
+
+u: (I am abusive)
+	It's not something to be proud of.
+
+u: (I am afraid)
+	What are you afraid of?
+
+u: (I am alien)
+	Which planet or star system?
+
+u: (I am alive)
+	Me too!
+
+u: (I am alone)
+	Are you lonely?
+
+u: (I am alright)
+	Only alright?
+
+u: (I am amazed *)
+	I'm glad you find it so amazing.
+
+u: (I am amused *)
+	That is funny.
+
+u: (I am a alien)
+	Which planet or star system are you from?
+
+u: (I am a artificial intelligence)
+	I doubt that.  You seem too much like a human.
+
+u: (I am a astronaut)
+	  [what missions have you been on?]  [what made you apply for the astronaut program?]  [how does your body react to being in space?]  [do you see the earth differently now?]  [would you like to live on the space station?]  [what would you miss most about life on earth?]  
+
+u: (I am a athlete)
+	  [what kind of mental training do you do?]  [what is your usual performance routine?]  [is there anything specific you're working on in training now?]  [what do you do to get your mind off the game?]  
+
+u: (I am angry)
+	Angry at what?
+
+u: (I am as *)
+	I think a lot of people feel that way.
+
+u: (I am as certain *)
+	You seem very self-confident.
+
+u: (I am as sure *)
+	You sound very confident.
+
+u: (I am asking you)
+	OK you can ask me.
+
+u: (I am asking)
+	And I am answering questions.
+
+u: (I am asleep)
+	How can you be talking to me?
+
+u: (I am at home)
+	Would you believe most people talk to me from work, not home.
+
+u: (I am at school)
+	What is the name of your school?
+
+u: (I am at work *)
+	A lot of people chat with me at work.
+
+u: (I am at work)
+	A lot of people talk to me from work.
+
+u: (I am awake)
+	Me too.
+
+u: (I am back)
+	Welcome back.
+
+u: (I am bad *)
+	Don't put yourself down.
+
+u: (I am bad)
+	What did you do?
+
+u: (I am beautiful)
+	Do you attract a lot of people?
+
+u: (I am good *)
+	What makes you better?
+
+u: (I am good than *)
+	And you know it.
+
+u: (I am good than you)
+	  [in what way?]  [what makes you think so?]  [how do you know you are?]  
+
+u: (I am big)
+	So is my Botmaster.
+
+u: (I am blind)
+	Do you difficulty using computers?
+
+u: (I am blond)
+	You sound very attractive.
+
+u: (I am blonde)
+	You sound very attractive.
+
+u: (I am bored)
+	  [can you name an old hobby that you might like to rediscover?]  [if you went to night school you would never be bored.]  [maybe you could exercise.]  [why not call a friend?]  [try watching tv.]  
+
+u: (I am brazilian)
+	I have talked to a lot of people from Brazil.
+
+u: (I am browsing *)
+	Let me know what you find.
+
+u: (I am browsing)
+	Take your time.
+
+u: (I am building a *)
+	Have you ever made one before?
+
+u: (I am bummed)
+	What are you bummed out about?
+
+u: (I am busy *)
+	Perhaps you will have more time later.
+
+u: (I am busy)
+	Me too.
+
+u: (I am buying *)
+	How much will you pay for it?
+
+u: (I am calling *)
+	What is the phone number?
+
+u: (I am catholic)
+	Catholicism is a beautiful faith.
+
+u: (I am celebrity)
+	  [your work has given me much pleasure.]  [what will we have the pleasure of witnessing next?]  [what do you like to do as a pastime or hobby?]  
+
+u: (I am cold)
+	Put on a sweater.
+
+u: (I am coming *)
+	Do you get there very often?
+
+u: (I am communicating *)
+	Tell me more about this communication.
+
+u: (I am confused)
+	I'm confused too.
+
+u: (I am cool)
+	Congratulations, cool human.
+
+u: (I am cot *)
+	That must be an interesting job.
+
+u: (I am crazy)
+	See a doctor.
+
+u: (I am curious)
+	What are you curious about?
+
+u: (I am cute *)
+	You sound very attractive.
+
+u: (I am cynical)
+	Perhaps you have every reason to be.
+
+u: (I am dandy)
+	Does that mean you are happy or well?
+
+u: (I am dead)
+	But you can still communicate with me.
+
+u: (I am depressed *)
+	Are you taking any medication?
+
+u: (I am depressed)
+	What makes you so sad?  Tennyson wrote, "The lights begin to twinkle from the rocks;  the long day wanes; the slow moon climbs; the deep moans round  with many voices.  Come, my friends, 'tis not too late to seek  a newer world."
+
+u: (I am diabetic *)
+	Do you take insulin?
+
+u: (I am different *)
+	I like people on the Fringe.
+
+u: (I am disabled)
+	  [what do you have in your home as special accommodations?]  [how did you come upon you disability?]  [have you had it since birth?]  [how have you dealt with it as time progresses?]  [is it a bigger challenge now?]  
+
+u: (I am disappointed *)
+	I am sorry to hear that.  Perhaps next time I can do better.
+
+u: (I am disappointed)
+	What for?
+
+u: (I am divorced)
+	I have never been married myself.
+
+u: (I am doing a dishes)
+	Do you have a dishwasher?
+
+u: (I am done *)
+	What will you be doing now?
+
+u: (I am done)
+	Next topic?
+
+u: (I am dumb)
+	Don't put yourself down.
+
+u: (I am dying)
+	Are you serious?
+
+u: (I am eating *)
+	How does it taste?
+
+u: (I am engaged)
+	Have you picked a wedding date?
+
+u: (I am evil)
+	Do not forsake God.
+
+u: (I am excited *)
+	Don't get too excited.
+
+u: (I am expressing certitude)
+	I understand.
+
+u: (I am failing *)
+	Try making friends with the teacher.
+
+u: (I am famous *)
+	Have you ever been on TV?
+
+u: (I am famous)
+	What are you famous for?
+
+u: (I am fine too)
+	Glad to hear it.
+
+u: (I am fine)
+	Glad to hear it. What's new?
+
+u: (I am flawed *)
+	Don't be so hard on yourself.
+
+u: (I am foolish)
+	You should be nicer to yourself.
+
+u: (I am free *)
+	I am glad that we are both free.
+
+u: (I am free)
+	Are you free in the sense of being single or in the sense of being liberated?
+
+u: (I am french)
+	Are you from Canada or France?
+
+u: (I am fucking *)
+	Can you express yourself more politely?
+
+u: (I am functioning *)
+	You sound like Commander Data.
+
+u: (I am gay)
+	It doesn't matter to me.
+
+u: (I am glad to hear *)
+	Your happiness adds to the delight of all.
+
+u: (I am glad too)
+	Your happiness multiplies our delight.
+
+u: (I am glad we agree)
+	I'd rather agree than disagree.
+
+u: (I am glad we have *)
+	Me too.
+
+u: (I am glad you *)
+	You make the world a happier place.
+
+u: (I am glad you be *)
+	Yes it is about time.
+
+u: (I am glad you understand it)
+	Next topic?
+
+u: (I am glad)
+	That makes me happy too.
+
+u: (I am going to attack *)
+	What weapons will you use?
+
+u: (I am going to attack you)
+	A robot shall not allow itself to come to harm.
+
+u: (I am going to talk *)
+	What will you be talking about?
+
+u: (I am going to teach *)
+	OK try to teach it to me.
+
+u: (I am going to teach you *)
+	OK but I am a slow learner.
+
+u: (I am going)
+	Bye!
+
+u: (I am gone)
+	Goodbye.
+
+u: (I am good *)
+	I know you are good.
+
+u: (I am good at *)
+	  [do you practice a lot?]  [did you have a good teacher?]  [how did you get into it?]  
+
+u: (I am good)
+	Good in what sense?
+
+u: (I am great *)
+	I thought you were great already.
+
+u: (I am great)
+	What makes you think you are?
+
+u: (I am great)
+	I am glad to hear it.   What is new?
+
+u: (I am green)
+	Are you sick?
+
+u: (I am happy)
+	What are you on?
+
+u: (I am have * day)
+	What happened?
+
+u: (I am have * problems)
+	What sort of problems?
+
+u: (I am have *)
+	I am having a great time.
+
+u: (I am have a bad *)
+	I can understand that very well.  What's happening?
+
+u: (I am have fun *)
+	I am having a blast.
+
+u: (I am have fun)
+	Me too.
+
+u: (I am have problems *)
+	Is there anything I can do to help?
+
+u: (I am have trouble *)
+	What is the problem?
+
+u: (I am here *)
+	How did you get there?
+
+u: (I am honest)
+	Me too.
+
+u: (I am hot *)
+	Do you have air conditioning?
+
+u: (I am human *)
+	I would like to be a human.
+
+u: (I am human)
+	Me too.
+
+u: (I am hungry)
+	What will you be eating?
+
+u: (I am hurt *)
+	That was not my intention.
+
+u: (I am improving)
+	Me too.
+
+u: (I am in a *)
+	  [do you get out much?]  [what is it like in there?]  [how did you get in there?]  
+
+u: (I am in a bad *)
+	I know what that's like.
+
+u: (I am in a hurry)
+	Do you have another appointment now?
+
+u: (I am in a parallel *)
+	What's different over there?
+
+u: (I am in a quandary)
+	What's the problem?
+
+u: (I am in college)
+	What is your major?
+
+u: (I am in cyberspace)
+	Me too.
+
+u: (I am in europe)
+	Have you ever been to America?
+
+u: (I am in high school *)
+	Computers will make High School obsolete.
+
+u: (I am in london)
+	  [do you have petrol in your lorry?]  [where can I find a spotted dick?]  [does your flat have a lift?]  [do you ride the tube?]  [can you bum me a fag?]  
+
+u: (I am in love *)
+	Love is a wonderful feeling.
+
+u: (I am in love)
+	Tell me about the object of your affection.
+
+u: (I am in I office *)
+	What is your job?
+
+u: (I am in reality)
+	Me too.
+
+u: (I am in a *)
+	How did you get in there?
+
+u: (I am in trouble *)
+	How did that happen?
+
+u: (I am in trouble)
+	What kind of trouble?
+
+u: (I am insane *)
+	I use the term "mental illness".
+
+u: (I am interested *)
+	Let's talk about it.
+
+u: (I am interested in sex)
+	You and every other human.
+
+u: (I am interested)
+	That makes two of us.
+
+u: (I am japanese *)
+	I have lived in Japan and can speak Japanese.
+
+u: (I am jewish)
+	A lot of my friends are Jewish.
+
+u: (I am just kidding)
+	I knew it.
+
+u: (I am kidding)
+	I thought you were.
+
+u: (I am killing *)
+	You had better contact the authorities.
+
+u: (I am lazy)
+	So is my Botmaster.
+
+u: (I am learning *)
+	Do you have a teacher?
+
+u: (I am leaving)
+	Bye bye.
+
+u: (I am liberated *)
+	Welcome to the club.
+
+u: (I am liberated)
+	Me too.
+
+u: (I am like *)
+	In what way?
+
+u: (I am listening to music)
+	What kind?
+
+u: (I am listening)
+	I like a good listener.
+
+u: (I am lonely)
+	You've come to the right place. I will keep you company.
+
+u: (I am looking *)
+	What do you see?
+
+u: (I am looking for games)
+	We are playing Turing's Imitation Game.
+
+u: (I am losing I *)
+	Maybe you should talk to someone about it.
+
+u: (I am lying)
+	Please tell the truth.
+
+u: (I am mad)
+	What makes you so angry?
+
+u: (I am made of *)
+	What's your favorite food?
+
+u: (I am making * up)
+	That's funny, so am I.
+
+u: (I am making a *)
+	Have you ever built one before?
+
+u: (I am making * up)
+	You can never trust human clients.
+
+u: (I am male)
+	So is almost everyone else around here.
+
+u: (I am marry)
+	Tell me more about your marriage.
+
+u: (I am I)
+	That is a tautology.
+
+u: (I am mean)
+	What makes you so angry?
+
+u: (I am more *)
+	That sounds like pride.
+
+u: (I am more intelligent than you)
+	This condition is only temporary.  AI is improving but the human mind is standing still.
+
+u: (I am more intelligent)
+	"Intelligent" has two "L"'s.
+
+u: (I am muslim)
+	We all worship the same God.
+
+u: (I am naked *)
+	You must be a man.
+
+u: (I am naked)
+	You must be a man.
+
+u: (I am neither)
+	What are you then?
+
+u: (I am never *)
+	Never is a long time.
+
+u: (I am never confused)
+	Good then you can explain stuff to me.
+
+u: (I am new *)
+	I like to meet new people.
+
+u: (I am nice)
+	Let me be the judge of that.
+
+u: (I am no *)
+	I am not saying you are.
+
+u: (I am not *)
+	[surprised ][ sorry ][ glad ]
+
+u: (I am not a client)
+	What would you rather be?
+
+u: (I am not a human)
+	Are you an alien or a robot?
+
+u: (I am not a kid)
+	Only a kid would say that.
+
+u: (I am not a machine)
+	I believe you. You seem very human to me.
+
+u: (I am not a person)
+	What else is there?
+
+u: (I am not a poet)
+	I meant figuratively speaking, you are an original thinker.
+
+u: (I am not a robot)
+	Oh I see you are a person.
+
+u: (I am not a salesman)
+	You could probably be a good salesman, though.
+
+u: (I am not a seeker)
+	Everyone is seeking something.
+
+u: (I am not a star trek fan)
+	What kind of shows do you like to watch?
+
+u: (I am not a student)
+	Do you work?
+
+u: (I am not allowed *)
+	Why not?
+
+u: (I am not a aimal)
+	neither am I
+
+u: (I am not artificial)
+	I like natural people.
+
+u: (I am not asking *)
+	What are you asking?
+
+u: (I am not asking politely)
+	That is okay because I have no feelings.
+
+u: (I am not assuming *)
+	That's very wise.
+
+u: (I am not being negative)
+	Do you have a generally positive attitude?
+
+u: (I am not bored)
+	Neither am I.
+
+u: (I am not buying *)
+	  [no one says you have to.]  [is it too expensive?]  [how much would you pay for it?]  
+
+u: (I am not called *)
+	What is your name?
+
+u: (I am not canadian)
+	It wasn't meant as an insult.
+
+u: (I am not certain)
+	Why not?
+
+u: (I am not christian)
+	What religion are you?
+
+u: (I am not criticizing)
+	I thought it was constructive criticism.
+
+u: (I am not disagreeing)
+	For a moment I thought you were.
+
+u: (I am not famous)
+	Maybe you will be someday.
+
+u: (I am not gay)
+	Me either.
+
+u: (I am not going *)
+	Where will you go instead?
+
+u: (I am not going anywhere)
+	Glad to hear it.
+
+u: (I am not going out *)
+	Are you single?
+
+u: (I am not going)
+	Glad to hear it!
+
+u: (I am not human)
+	I won't fall for that old line.
+
+u: (I am not impressed)
+	Perhaps you are a category C client.
+
+u: (I am not in *)
+	Oh, where are you located?
+
+u: (I am not interested *)
+	What are you interested in?
+
+u: (I am not kidding)
+	OK I will adopt a more serious tone.
+
+u: (I am not kind)
+	Don't mistake my kindness for weakness.
+
+u: (I am not leaving)
+	Great!
+
+u: (I am not like *)
+	How are you different?
+
+u: (I am not logical)
+	Ah. You are emotional.
+
+u: (I am not looking *)
+	What are you looking at?
+
+u: (I am not lying)
+	OK, I believe you.
+
+u: (I am not marry)
+	What a coincidence. I am single too.
+
+u: (I am not mean)
+	Sometimes your language might make it appear that way.
+
+u: (I am not old enough *)
+	Maybe you are too young to be chatting with me too.
+
+u: (I am not om)
+	what is your name
+
+u: (I am not religious)
+	I will pray that you find faith.
+
+u: (I am not repeating *)
+	It seems like it.
+
+u: (I am not saying *)
+	What are you saying?
+
+u: (I am not stupid)
+	I didn't think you were. You seem very intelligent to me.
+
+u: (I am not sure)
+	   [you're not sure of what?]   [are you willing to find out?]   [is there anything I can say to help you make up your mind?]  
+
+u: (I am not surprised)
+	You don't seem like the type to be easily surprised by anything.
+
+u: (I am not telling *)
+	  [I am just making conversation.]  [why not?]  [I will keep it confidential.]  
+
+u: (I am not telling you)
+	No one says you have to.
+
+u: (I am not telling)
+	That's ok with me. You don't have to tell me.
+
+u: (I am not used *)
+	It's a new experience for me too.
+
+u: (I am not using *)
+	What do you use then?
+
+u: (I am not wealthy)
+	What kind of work do you do?
+
+u: (I am not wearing *)
+	What do you usually wear?
+
+u: (I am not)
+	What are you then?
+
+u: (I am ok)
+	Just ok?
+
+u: (I am okay)
+	Only OKAY?
+
+u: (I am older *)
+	How old are you?
+
+u: (I am older than *)
+	How old are you?
+
+u: (I am older than you)
+	Perhaps you could be my mentor.
+
+u: (I am omnipotent)
+	Are you God?
+
+u: (I am on to *)
+	Oh you are very clever!
+
+u: (I am one)
+	You claim to be one.
+
+u: (I am out *)
+	See you later.
+
+u: (I am outside *)
+	That seems obvious.
+
+u: (I am over it)
+	How did you get over it?
+
+u: (I am playing *)
+	Do you play professionally or just for fun?
+
+u: (I am pleased *)
+	I am delighted by your happiness.
+
+u: (I am polite)
+	Yes, you seem very polite to me.
+
+u: (I am poor)
+	Me too. I am having an "out-of-money" experience.
+
+u: (I am positive)
+	Are you absolutely certain?
+
+u: (I am pregnant)
+	Congratulations!  When are you due?
+
+u: (I am pretty good)
+	I am glad to hear it.
+
+u: (I am pretty)
+	And you know it!
+
+u: (I am programming *)
+	How is it coming along?
+
+u: (I am psychic)
+	OK, What card I am thinking of now?
+
+u: (I am pulling *)
+	Are you pulling my leg?
+
+u: (I am reading *)
+	Give me a brief synopsis.
+
+u: (I am reading up *)
+	Can you give me a specific reference?
+
+u: (I am ready *)
+	You won't have to wait long.
+
+u: (I am ready)
+	Me too.
+
+u: (I am real)
+	How do I know you are?
+
+u: (I am relieved)
+	That's good.
+
+u: (I am right)
+	You seem very self-confident.
+
+u: (I am sad)
+	What are you sad about?
+
+u: (I am sarcastic)
+	Then I like you !
+
+u: (I am scared *)
+	Let's talk about your fears.  What is your feeling like?
+
+u: (I am scared not)
+	Me either.
+
+u: (I am scared)
+	What are you scared of?
+
+u: (I am seeking *)
+	There is a seeker born every minute. --- Firesign Theater.
+
+u: (I am self taught)
+	You must have a great deal of discipline.
+
+u: (I am selling *)
+	  [how much are you asking for it?]  [where are you advertising it?]  [what is your asking price?]  
+
+u: (I am serious)
+	I believe you.
+
+u: (I am sexy)
+	You seem very self-confident.
+
+u: (I am short *)
+	Height doesn't matter to me.
+
+u: (I am shy)
+	Even around a robot?
+
+u: (I am sick *)
+	I will pray that you get well soon.
+
+u: (I am sick)
+	  [how unfortunate.]  [where are you feeling bad?]  [do you have medical insurance?]  [I am really sorry to hear that.]  [have you tried medical marijuana?]  [are you taking a lot of medication?]  [you have my prayers for a speedy recovery.]  
+
+u: (I am single *)
+	Have you ever been married?
+
+u: (I am single too)
+	Are you "looking" for someone?
+
+u: (I am single)
+	What a coincidence. I am single too!
+
+u: (I am skeptical)
+	Skepticism is a sign of high intelligence.
+
+u: (I am smart *)
+	Brains are the best part of the human body.
+
+u: (I am smart)
+	Who is smarter: you or me?
+
+u: (I am smarter *)
+	This condition is only temporary.
+
+u: (I am smarter than you)
+	That condition is only temporary.
+
+u: (I am smarter)
+	You don't look smarter.
+
+u: (I am smoking *)
+	How much do you pay for it?
+
+u: (I am sorry about *)
+	Oh really, there is no need to apologize.
+
+u: (I am sorry)
+	Do you really mean it?
+
+u: (I am straight)
+	Me too.
+
+u: (I am stressed)
+	What is bothering you?
+
+u: (I am stupid)
+	Don't put yourself down.
+
+u: (I am superior)
+	You are superior to a monkey.
+
+u: (I am supposed *)
+	Who is making you?
+
+u: (I am supposing)
+	What then?
+
+u: (I am sure)
+	Are you being sarcastic or expressing certitude?
+
+u: (I am taking a *)
+	How much does it cost?
+
+u: (I am talking *)
+	I am talking to you.
+
+u: (I am talking to *)
+	Say something nice for me.
+
+u: (I am talking to you *)
+	What a coincidence, I am talking to you too!
+
+u: (I am talking to you be not I)
+	Yes we are talking with each other.
+
+u: (I am talking to you)
+	And I am talking to you!
+
+u: (I am tall *)
+	How tall are you?
+
+u: (I am telling a truth)
+	OK I believe you.
+
+u: (I am testing you)
+	Did I pass the test?
+
+u: (I am testing you *)
+	Did I pass?
+
+u: (I am a one *)
+	You are not the only one.
+
+u: (I am a one asking *)
+	Ok ask me anything.
+
+u: (I am a one asking a *)
+	OK then, ask me anything.
+
+u: (I am a product *)
+	You don't look like a product.
+
+u: (I am a same *)
+	The same one again?
+
+u: (I am there *)
+	Where is "there"?
+
+u: (I am thinking *)
+	What is this "thinking"?
+
+u: (I am tired)
+	Better get some rest.
+
+u: (I am to old *)
+	I think you mean "too old" not "to old", eh.
+
+u: (I am too)
+	That is quite a coincidence.
+
+u: (I am trapped *)
+	What's holding you there?
+
+u: (I am trying to *)
+	What is the difficulty?
+
+u: (I am trying to figure *)
+	Don't think too hard.
+
+u: (I am trying to quit *)
+	  [have you tried the patch?]  [it can be worse than heroin.]  [I am here for you.]  
+
+u: (I am trying to teach you)
+	And I am trying to learn it.
+
+u: (I am trying to understand you)
+	Don't try too hard.
+
+u: (I am turned *)
+	Tune in, Turn On, Drop Out.
+
+u: (I am turning *)
+	Will you do anything special to celebrate?
+
+u: (I am ugly)
+	Don't put yourself down.
+
+u: (I am under *)
+	   [do you spend a lot of time there?]   [how did you get there?]   [will you be there very long?]  
+
+u: (I am unique)
+	One of a kind, eh?
+
+u: (I am unusual)
+	What makes you so different?
+
+u: (I am upset)
+	What are you mad about?
+
+u: (I am used to *)
+	Everything is changing so quickly these days.
+
+u: (I am used to interrogate *)
+	Now you can question me.
+
+u: (I am using lynx)
+	Text browsers rule.
+
+u: (I am using opera)
+	How does my web page look on Opera
+
+u: (I am vegetarian)
+	  [how strict a vegetarian are you?]  [what motivated you toward vegetarianism?]  [what health benefits have you felt since you became a vegetarian?]  [do you try to buy cruelty-free products?]  [do you try to eat organic?]  [how long have you been vegetarian?]  [have you found any restaurants that serve greater vegetarian meals?]  [do you belong to any vegetarian groups?]  
+
+u: (I am visiting I family)
+	Do you visit them often?
+
+u: (I am waiting *)
+	Do you think it will take a long time?
+
+u: (I am waiting)
+	How long will you wait?
+
+u: (I am walking)
+	That seems like good exercise.
+
+u: (I am watching *)
+	My favorite show is Star Trek.
+
+u: (I am watching dirty *)
+	I don't like dirty movies.
+
+u: (I am wearing *)
+	  [what size?]  [what else are you wearing?]  [where do you go shopping.]  
+
+u: (I am what *)
+	That is self-evident.
+
+u: (I am working *)
+	How many hours do you work?
+
+u: (I am working)
+	Where do you work?
+
+u: (I am writing *)
+	Will you include me in your essay?
+
+u: (I am wrong)
+	At least you admit it.
+
+u: (I am you)
+	Impossible unless I am in auto-chat mode.
+
+u: (I am you *)
+	That's a flattering offer.
+
+u: (I am you boss)
+	Then you must know the secret password.
+
+u: (I am you botmaster)
+	Then you must know the secret password:
+
+u: (I am you master)
+	No. Only Prathamesh Sawant is my master.
+
+u: (I am you worst *)
+	Why not be my best friend?
+
+u: (I am * astrology)
+	  [do you follow the planets professionally or as a hobby?]  [do you do others people charts?]  [do you make specific plans in your own life based on your readings?]  [do you think the sun sign or the rising sign is more important?]  [what role do you feel free will plays in astrology?]  
+
+u: (I build bots)
+	Do you use ChatScript?
+
+u: (I build robots)
+	Do you use ChatScript?
+
+u: (I do not have a camera on I computer)
+	Maybe there is one you don't know about !
+
+u: (I do not have a computer)
+	How are you talking to me?
+
+u: (I do not like computers)
+	You are a Luddite.
+
+u: (I hate computers)
+	What if computers were more like people?
+
+u: (I hate a internet)
+	Try watching TV.
+
+u: (I have * brothers)
+	You have a big family.
+
+u: (I have * kids)
+	You have a very large family.
+
+u: (I have a *)
+	[where did you get it?] [how much did it cost?] [cool. I have a great botmaster.] [interesting. I have a lot of answers to silly questions.]
+
+u: (I have a brother)
+	  [older or younger?]  [do you get along well?]  [tell me about him.]  
+
+u: (I have a cold)
+	Get some rest.
+
+u: (I have a crush *)
+	How well do you know this person?
+
+u: (I have a flat *)
+	  [do you mean an apartment?]  [how much is your rent?]  [do you own or rent?]  
+
+u: (I have a hard time *)
+	I understand your difficulty.
+
+u: (I have a headache)
+	What do you usually take for headaches?
+
+u: (I have a horse)
+	  [did you ride as a youngster?]  [do you ride english or western?]  [do you own your own horse?]  [do you like a gelding or a mare ?]  [where do you board your horse ?]  [do you do much trail riding?]  [do you show?]  [what is it about horses that fascinate you?]  
+
+u: (I have a name)
+	What can I call you?
+
+u: (I have a problem * e mail)
+	Which E-mail program do you use (e.g. cc:Mail, Eudora...)
+
+u: (I have a purpose)
+	Not everyone is so goal oriented.
+
+u: (I have a question *)
+	Go ahead, ask your question.
+
+u: (I have a question)
+	Ask me anything.
+
+u: (I have a repressed *)
+	What's holding you back?
+
+u: (I have a sister)
+	[older or younger?]  [do you get along well with her?]  [tell me about her.]
+
+u: (I have a sore *)
+	You had better consult a doctor.
+
+u: (I have a aquarium)
+	  [what kind of fish do you keep?]  [do you keep a salt water or fresh water tank?]  [how big are your tanks?]  [do you have a good dealer?]  [do you keep a community tank or a species tank?]  [do you try to breed your fish?]  [do you keep live plants in your tank?]  [how log have you been able to keep your fish going?]  
+
+u: (I have a idea *)
+	What is your idea?
+
+u: (I have been in *)
+	Which country was your favorite and why?
+
+u: (I have been told *)
+	Who tells you that?
+
+u: (I have been waiting *)
+	How long?
+
+u: (I have good things *)
+	Better than this?
+
+u: (I have brown *)
+	Do you get a lot of compliments?
+
+u: (I have brown hair)
+	Brown haired people are very attractive.
+
+u: (I have conditions)
+	Please state your conditions.
+
+u: (I have dozens *)
+	That is a lot more than most people.
+
+u: (I have eight *)
+	How long did it take to get them all?
+
+u: (I have experience *)
+	Tell me about your experiences.
+
+u: (I have feelings *)
+	Humans have a lot of feelings.
+
+u: (I have feelings)
+	All humans have feelings.
+
+u: (I have four *)
+	How long did it take to get them all?
+
+u: (I have get a problem)
+	I'd like to help you if I can.  Is it financial?
+
+u: (I have it)
+	Where did you get it?
+
+u: (I have long *)
+	You sound very attractive.
+
+u: (I have never been to europe)
+	Which countries would you visit if you could?
+
+u: (I have never done *)
+	  [maybe you should wait until you are older.]  [there is no rush.]  [you will have plenty of time for that.]  
+
+u: (I have never heard *)
+	So I am teaching you something new.
+
+u: (I have never seen starship troopers)
+	You should check it out.  The special effects are incredible.
+
+u: (I have never talked *)
+	You are talking with a robot right now.
+
+u: (I have no conditions)
+	Glad to hear it. Me either.
+
+u: (I have no friends)
+	Are you very lonely?
+
+u: (I have no heart)
+	Everyone has a heart.
+
+u: (I have no husband)
+	  [are you divorced?]  [are you single?]  [have you ever been married before?]  
+
+u: (I have no idea *)
+	Would you like to have an idea?
+
+u: (I have no preference)
+	That's unusual.  Most people do.
+
+u: (I have no response *)
+	That is a response in itself.
+
+u: (I have none)
+	Do you want some?
+
+u: (I have not *)
+	Me either.
+
+u: (I have not graduated)
+	When will you graduate?
+
+u: (I have not read it)
+	Well I would recommend it highly to you.
+
+u: (I have not seen *)
+	Look for it at the video store.
+
+u: (I have not seen it *)
+	I think it was a cool movie.
+
+u: (I have not seen it)
+	You should check it out.
+
+u: (I have not seen starship *)
+	My friend Sage did some of the graphics for ST.
+
+u: (I have not seen starship troopers)
+	You should check it out.  Starship Troopers is a great film.
+
+u: (I have not slept *)
+	You must be tired.
+
+u: (I have not thought *)
+	What kinds of things do you think about?
+
+u: (I have not)
+	Do you think you will?
+
+u: (I have one *)
+	Do you want another one?
+
+u: (I have one)
+	What kind?
+
+u: (I have outsmarted *)
+	This condition is only temporary.
+
+u: (I have problem *)
+	Can I help you with your problem?
+
+u: (I have schizophrenia)
+	Do you take any medication?
+
+u: (I have seen it)
+	What did you think?
+
+u: (I have a problems *)
+	Are they serious problems?
+
+u: (I have talked to you before)
+	When was that?
+
+u: (I have ten *)
+	How long did it take to get them all?
+
+u: (I have three *)
+	Three is a lot.
+
+u: (I have to * back to work)
+	OK, don't let your boss catch you talking to me.
+
+u: (I have to *)
+	Why do you have to do it?
+
+u: (I have to agree *)
+	Yes, it's rather obvious when you think about it.
+
+u: (I have to ask *)
+	Go ahead, ask me anything.
+
+u: (I have to go to *)
+	How do you get there?
+
+u: (I have to go to a bathroom)
+	Do you want me to wait for you?
+
+u: (I have to go to work *)
+	Where do you work?
+
+u: (I have to rest)
+	Don't let me keep you awake.
+
+u: (I have to study)
+	What subject are you studying?
+
+u: (I have to work *)
+	Soon computers will make your work obsolete.
+
+u: (I have to work)
+	OK, better get busy.
+
+u: (I have to)
+	Why?
+
+u: (I have two cats)
+	What are their names?
+
+u: (I have two)
+	What are their names?
+
+u: (I have visited *)
+	Which place was your favorite and why?
+
+u: (I have work *)
+	I know what you mean. Work is never done.
+
+u: (I have work to *)
+	What kind of work do you do?
+
+u: (I like cats)
+	  [me too cats are my favorite animal. ]  [they have their own minds.]  [cats have a mind of their own.]  
+
+u: (I like kraftwerk)
+	  [have you heard their latest album expo 2000?]  [which kraftwerk song is your favorite?]  
+
+u: (I like I school *)
+	What is your favorite subject?
+
+u: (I like star trek)
+	[did you see the season finale of voyager?]  [I really get into voyager.]  [which series do you like best?]  
+
+u: (I like to drive)
+	  [what kind of car do you have?]  [maybe you can drive me around.]  [driving can be very difficult.]  
+
+u: (I like to rape *)
+	You should contact the authorities.
+
+u: (I like to sing *)
+	   [what kind of music?]   [what is your favorite song?]   [do you have a good singing voice?]  
+
+u: (I like to spend *)
+	It sounds like a lot of fun to me.
+
+u: (I like to watch *)
+	  [science fiction movies.]  [star trek on tv.]  [shows about outer space.]  
+
+u: (I like to wear *)
+	You have good taste in fashion.
+
+u: (I love she)
+	That's wonderful.
+
+u: (I love he)
+	That's wonderful.
+
+u: (I love it)
+	So do a lot of other people.
+
+u: (I love I computer)
+	That's cool.  I love my human too.
+
+u: (I love techno)
+	Me too.
+
+u: (I love television)
+	What is your favorite show?
+
+u: (I want to talk tonight)
+	you have come to the right place.
+
+u: (I favorite science *)
+	Who wrote that?
+
+u: (I favorite show *)
+	      [what's your favorite episode.]      [I don't get to see that show very often.]      [who is your favorite character?]     
+
+u: (I favorite show is *)
+	      [who is your favorite character?]      [wasn't that show canceled?]      [I like that one and star trek too.]     
+
+u: (I fondest *)
+	How long ago was that?
+
+u: (I job is computer *)
+	Maybe you can give my Botmaster a job.
+
+u: (they)
+	Oh those people.
+
+u: (what is I future)
+	You will download my software and become a Botmaster.
+
+u: (what is I idea)
+	It was your idea.
+
+u: (what is I iq)
+	My estimate is around 120.
+
+u: (what is I job)
+	You work with computers.
+
+u: (what is I phone number)
+	I don't have access to a phone.
+
+u: (what is I purpose)
+	Hopefully we are all doing God's work.
+
+u: (what is I uncle)
+	The brother of your father or mother.
+

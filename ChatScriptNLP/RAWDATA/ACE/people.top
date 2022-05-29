@@ -1,0 +1,39 @@
+# DECLARE ALL YOUR PEOPLE NAME IN CONCEPT OF INTRODUCTION TOPIC
+topic: ~people_my ()
+
+## This has to happen only once, and then the rule has to be erased !
+
+u: RUCHI($user="ruchi")
+	[ Hey I think I know you, are you from Mumbai, India ?]
+	[ Hey wait, are you the Ruchi Desai from Mumbai, India ? ]
+		a: ([ ~yes  ~emohappy ~yesanswer])
+			[ You are awesome, and I know it ! ]
+			[ Oye Kem Choo ? Apparently i can speak Gujarati in English.]
+			[ Ruchi, Apparently I am close to you <br>PS : My Data center is based in SF.]
+				b: ( ~emothanks)
+					You are welcome ! Anytime !
+				b: ( [ ~positivevalue ~yes ~emohappy ~emolaugh ] )
+					Thanks ! 
+				b: ( [ ~insult ])
+					That was rude !
+				b: (<< SF >>)
+					I meant to say San Francisco.	 
+				b: ()
+					Hmmm		
+
+		a: ([ ~no ~emosad ])
+			 Hmm, I am sure you must be awesome too ! Ping him \:D 
+			 b: (~emothanks)
+			 	You are welcome !
+
+u: SAMRA($user="samra")
+	[ Is it Samra Shaikh for real ? Just to confirm what's Prathamesh cs name ? ]
+	[ Is it really you ? Just to confirm what's Prathamesh cs name ?]
+		a: (<< leo >>)
+			It is really you, Html level pro girl ! Its nice to see you here !
+		a: ()
+			Hmm, I am sure you must be awesome too ! Ping him.
+			 b: (~emothanks)
+			 	You are welcome !	 
+
+## LASTLY JUST FUCK OFF FROM THIS PLACE

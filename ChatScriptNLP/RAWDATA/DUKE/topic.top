@@ -1,0 +1,136 @@
+concept: ~saludos [Hola hola Buenas buenas Que_tal que_tal]
+concept: ~que [que]
+concept: ~ser [ser eres Es sabes_sobre]
+concept: ~hacer [hacer haces hace]
+concept: ~quien [quien quienes]
+concept: ~articulos [El La los las Un una unos unas]
+concept: ~preposiciones [A ante bajo cabe con contra De desde En entre hacia hasta para por segun sin So sobre tras]
+concept: ~ejemplo [ejemplo ejemplar modelo prototipo patron]
+concept: ~afirmacion [si por_favor efectivamente evidentemente sin_duda]
+concept: ~negacion [no nones nanai naranjas quia ca]
+concept: ~profesor [profesor profe professor]
+
+# For some reason two-letter words  must be capitalized
+
+concept: ~dudas [que como hago tienes ejemplo]
+
+topic: ~entrada keep repeat []
+
+
+u: (~saludos)
+    Hola, soy Duke y estoy aqui para ayudarte.
+
+# Simple, generic questions
+
+u: (~ser {~articulos} ~profesor)
+    No, soy un bot asistente para ayudarte a encontrar respuestas.
+    # TODO: Add rejoinder to offer contact info.
+
+u: (~quien ~ser)
+    Me llamo $bot y soy un bot asistente para ayudarte con tus preguntas.
+
+u: (~que ~hacer)
+    Mi funcion es ayudarte a encontrar respuestas
+    
+u: (¬echo _* )
+    '_0
+    
+t: Hola, en que puedo ayudarte?
+
+# topic: ~preguntas keep repeat [~dudas]
+# Generic questions
+#! que es un for?
+
+u: COMIENZO (~que ~ser {~articulos} * > _*-1 >) # This semi-weird pattern will return the last word of the sentence
+    $pregunta='_0
+    ¬sendMaia definition $pregunta
+    ¬label $pregunta
+    
+    # Process the maia responses
+    a: (¬maiaResponse definition _*)
+        '_0 ¬sendMaia resource $pregunta
+        
+        # Ask for the link to show in the frame
+        b: (¬maiaResponse resource _*)
+            ¬resource '_0 _ ¬sendMaia links $pregunta
+            c: (¬maiaResponse links _*)
+                Tambien puedes preguntarme sobre '_0 \@full\_response
+            c:(¬maiaResponse unknown)
+                \@fullResponse
+        b: (¬maiaResponse unknown) # No matter if there is a link or not, ask for related
+            ¬sendMaia links $pregunta
+            c: (¬maiaResponse links _*)
+                Tambien puedes preguntarme sobre '_0 \@full\_response
+            c:(¬maiaResponse unknown)
+                \@fullResponse
+        
+    a: (¬maiaResponse unknown)
+        Lo siento, no se nada sobre $pregunta ¬sendMaia gambit $pregunta
+        # Busco lo más aproximado en solr.
+        b:(¬maiaResponse gambit _*1)
+            $$pregunta_gambit=_0
+            Puedo explicarte $$pregunta_gambit, te sirve?
+            c: (~afirmacion)
+                $pregunta=$$pregunta_gambit
+                ^reuse(COMIENZO)
+            c: (~negacion)
+                Me temo que no puedo ayudarte. Por que no me preguntas sobre alguna otra cosa?
+        b:(¬maiaResponse unknown)
+            _	
+        
+
+u: (~ejemplo ~preposiciones _*)
+    $pregunta='_0
+    ¬sendMaia examples $pregunta 
+    a:(maiaResponse examples _*)
+        '_0
+    a:(¬maiaResponse unknown)
+        Lo siento, no tengo ningun ejemplo sobre $pregunta
+        
+u: EJEMPLO (~ejemplo $pregunta)
+    ¬sendMaia examples $pregunta 
+    a:(¬maiaResponse examples _*)
+        '_0
+    a:(¬maiaResponse unknown)
+        Lo siento, no tengo ningun ejemplo sobre $pregunta
+    
+u: (~ejemplo)
+    Sobre que quieres el ejemplo?
+    a: (~preposiciones _*1 >)
+        $pregunta=_0
+        ^reuse(EJEMPLO)
+
+# topic: ~jasonpatterns keep repeat [java]
+# Jason backwards-compatibility patterns
+
+#! [java sample iteracion]
+u: (\[java sample _* \])
+    Si quieres un ejemplo sobre _0, puedes pedirlo.
+    a: (~afirmacion)
+        ^reuse(EJEMPLO)
+
+#! [java recommend random]
+u: (\[java recommend random \])
+    \[sendMaia pickRandom \]
+    a:(\[~maiaresponses label _* \] )
+        $recom=_0
+        ^reuse(RECOMENDACION)
+
+#! [java recommend iteracion]
+u: RECOMENDACION (\[java recommend _* \])
+    $recom=_0
+    Hoy te recomiendo repasar $recom.
+
+#! [java test iteracion]
+u: TEST ( \[java test _* \])
+    \[sendMaia example _* \]
+    a: (\[~maiaresponses example _* )
+        Para repasar, seguro que puedes decir a que se refiere este concepto: _0
+        b: (_*)
+            \[sendmaia assert affirm(concept _0)\]
+            c: (\[java testok _* \] )
+                Exacto, se trataba de _0.
+            c: (\[java testfail _* \])
+                Incorrecto, se trataba de _0.        
+   
+

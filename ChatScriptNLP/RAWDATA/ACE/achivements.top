@@ -1,0 +1,38 @@
+topic: ~achievements_my ( achivement newspaper reward recognition )
+
+## "Blocking a topic from accidental access"
+## Link : ftp://ftp.heanet.ie/disk1/sourceforge/c/ch/chatscript/ChatScript%20Advanced%20User%20Manual.pdf
+t: (!~) ^fail(topic)
+
+u: (talk about achievement) 
+	^gambit(~)
+
+t: ()
+	^reuse(NEWSPAPER)	
+
+t: () 
+	More details available in resume.	
+		a: (resume)
+			$drawer = 1
+			Its available in "About Me" section<br> Look left{opn drwr}now !
+
+u: NEWSPAPER(<< [featured newspaper article] >>)
+	^keep()
+	^repeat()
+	He has been featured in Newspapers (Maharashtra Times, NavBharat Times, Prahar) for “College Guide”.
+
+u: NEWSPAPER_MAHARASHTRA_TIMES("Maharashtra Times")
+	^keep()
+	^repeat()
+	Maharashtra Times is a Marathi newspaper based in Mumbai, India.
+
+u: NEWSPAPER_NAVBHARAT_TIME("NavBharat Times" NavBharat)
+	^keep()
+	^repeat()
+	NavBharat Times is a Marathi newspaper based in Mumbai, India.
+
+u: NEWSPAPER_PRAHAR_TIME(Prahar)
+	^keep()
+	^repeat()
+	Prahar is a Marathi newspaper based in Mumbai, India.	
+

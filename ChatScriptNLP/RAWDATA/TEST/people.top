@@ -1,0 +1,31 @@
+# DECLARE ALL YOUR PEOPLE NAME IN CONCEPT OF INTRODUCTION TOPIC
+topic: ~people nostay []
+
+u: RUCHI($user="ruchi desai")
+	[ Hey wait, are you the Ruchi Desai from California, Long Beach ? ]
+		a: ([ ~yes  ~emohappy])
+			[ You are awesome, and he knows it ! ]
+			[ Oye Kem Chooooooo ? LOL Apparently i can speak Gujarati in English \:P ]
+			[ Ruchi, Apparently I am close to you PS : My Data center is based in SF  \:P ]
+				b: ( ~emothanks)
+						You are welcome ! Anytime !
+				b: ( [ ~positivevalue ~yes ~emohappy ~emolaugh ] )
+					Thanks ! 
+				b: ( [ ~insults ])
+					That was rude ! 	
+
+		a: ([ ~no ~emosad ])
+			 Hmm, I am sure you must be awesome too ! Ping me \:D 
+			 b: (~emothanks)
+			 	You are welcome !
+
+u: SAMRA($user="samra shaikh")
+	[Samra html level pro pro girl !]
+	[Samra where you have been ?]
+
+## This part will not work 
+## u: (who be [ "ruchi desai" "samra shaikh"])	
+	## Important people of his life !	
+
+u: DEFAULT() :
+	 [Hello] [Hi] [Hey] $user , its good to meet you !

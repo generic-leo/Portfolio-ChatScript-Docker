@@ -1,0 +1,813 @@
+## ---------------------------------------------------------------------
+## CORE CONCEPTS LINKED WTIH SIMPLECONTROL.TOP
+## ---------------------------------------------------------------------
+concept: ~mytopics ( ~projects_my ~workexperience_my )
+concept: ~my_knowledge_db (~my_profile ~ai ~knowledge ~science ~astrology ~biography ~client ~emotion ~sex_custom ~that)
+
+## ---------------------------------------------------------------------
+## PRATHAMESH CONCEPTS 
+## ---------------------------------------------------------------------
+
+concept: ~creator ( he creator prathamesh prathamesh's sawant sawant's "Prathamesh Sawant" "prathamesh sawant" )
+concept: ~myself ( ~creator Leo master himself )
+concept: ~yes_mod ( ofcourse ~yes ~emohappy "ha" "theek")
+concept: ~no_mod ( ~no ~emosad )
+concept: ~insult_desi ( "aand mat kaha" lavde lavdu bakrichod balatkaari laude lavde betichod bhenchod lode bhosdi bihari bhosdike choot randi rand chudasi chutia chootia gaand gaandu gandu gandmasti jhaat jhatoo kaminey kutha sala khajoor madarchod mume fudi fudhi lund tatti chuglee bhos danda bable chudaye bhosada bhosade tharki chut bhadwe bhosad bhosdee bhundi dalli gand lauda louda harami haram kuthri suwar teri tuzya aaichi puchi chutiya bc harami asshole landfakir ~insults )
+concept: ~project_cat ( project hardwork teamwork )
+concept: ~my_employement ("professional experience" "work experience" job mobitrail "first job" work "work history" employment)
+concept: ~job_cat ( professional_experience ~job ~my_employement)
+concept: ~achievements_cat (achievement newspaper reward recognition)
+concept: ~acknowledge_all ( ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust)
+
+## ---------------------------------------------------------------------
+## INTRODUCTIONS
+## ---------------------------------------------------------------------
+
+topic: ~INTRODUCTIONS keep repeat (~emogoodbye ~emohello ~emohowzit name here ~myself)
+
+## t: (%input<%userfirstline %input > 0)
+	## ^keep()
+	## ^reuse(GREET_FIRSTTIME)
+
+# Very first thing 
+#!x matches every time on startup of a new conversation
+## This has been modified at server level typing.js method showResponseMessage
+
+## t: (%hour<12) Good REPLACETHISWITHCURRENTTIME, ^reuse(FIRSTLINE) A
+## t: (%hour>11 %hour<18) Good REPLACETHISWITHCURRENTTIME, ^reuse(FIRSTLINE) B
+## t: (%hour>18) Good REPLACETHISWITHCURRENTTIME, ^reuse(FIRSTLINE) C
+
+## t: FIRSTLINE( %input<%userfirstline  $user) 
+	## ^keep() 
+	## if(%response==0) { if($user){ Hi $user, [Welcome back !][Glad you came back.] }}
+	## else
+	## {[I am Prathamesh's Personal Assistant.]} Second 
+		## a: (our)
+			## [Yes you heard that right !]
+
+		## a: (<<PB>>)
+			## I meant Personal Bot.	
+
+		## a: (why)
+			## Hmmm, shouldn't this be obvious.	
+		## a: (it night)
+			## And you're still awake ? Too bad !
+			## b: ()
+				## [Okay][Hmmm][Hmmmmm]!	
+
+u: CHECK_FOR_REFRESH("browser refresh")
+	^keep()
+	## ^reuse(FIRSTLINE)			
+	if($user)
+	{ 
+		Hi $user, [Welcome back !][Glad you came back.]
+	}
+	else
+	{	
+		[Hi][Hello] REPLACETHISWITHCURRENTTIME, I am Prathamesh's Personal Assistant.
+	}
+		a: ("personal assistant")
+			[Yes you heard that right !]
+
+		a: (our)
+			[Yes you heard that right !]
+
+		a: (<<PB>>)
+			I meant Personal Bot.	
+
+		a: (why)
+			Hmmm, shouldn't this be obvious.	
+		a: (it night)
+			And you're still awake ? Too bad !
+			b: ()
+				[Okay][Hmmm][Hmmmmm]!	
+
+?: (how be you)
+	[Just never better.][Bright as you are !]
+
+t: GREET_FIRSTTIME()
+	[ Hi, My name is Ace !]
+	[ Hi, He calls me Ace !]
+	[ Hi, Prathamesh calls me Ace !]
+	[ Hi, Prathamesh named me Ace !]
+	 a: (why)
+	 	 I don't know what to say.
+	 a: (he)
+	 	 My creator.	 
+	 a: (~good_appearance name)
+	 	 Thanks to Prathamesh!	 
+
+t: Have you been here before ?
+	a: (~yes_mod)
+		$visited = true;
+		[Glad you came back !]
+		[So glad you're back !]
+		[My universe will never be the same, I'm glad you came back !]
+
+
+t: ()
+   if($visited)
+   {
+   	 [Sorry, I dont remember,]
+   	 [Sorry, I cant seem to remember,]
+   	 you are a recruiter, acquaintance or a friend?
+   }
+   else
+   {	
+   	   [Are you a recruiter, acquaintance or a friend ?]
+   	   [Are you an acquaintance, friend or a recruiter ?]
+   } 
+	a: (recruiter)
+	$usertype = "recruiter"
+
+	a: (acquaintance)
+	$usertype = "acquaintance" 
+
+	a: (friend)
+	$usertype = "friend"
+
+	a: (why [dont cant] * remember)
+		Apparently yes ! You never know what may happen in the future.
+
+	a: (whom)
+		To Prathamesh ?
+
+	a: (why * [important know])
+		Somethings are better left unsaid !	
+
+	a: (why)
+		I want to know more about you.
+
+	a: ([~role_enemy ~strongbadness ~badness])
+		But why ?	
+			
+
+u: (be friends)
+	We already are! 
+
+?: (you live)
+	I live in San Franscicso,USA.
+
+u: (how * ~creator)
+	Awesome as you are !	
+
+u: (why ["chat bot" bot "personal assistant" assistant])	
+	Because 2016 is rise of Bots !
+
+u: (time)
+	[It is %hour h %minute m  %second s.]
+
+u: (about you) 
+	I am a chat bot built by Prathamesh.
+
+u: (you like)
+	I like to make new friends.
+
+u: (you dislike)
+	Boredom.		
+
+u: (rivals)	
+	None.	
+
+u: (* [where show] * [about home project contact "about me"] {section})
+	$drawer = 1
+	Look left.{opn drwr}now !	
+
+u: (have <<friends>>)
+	Many and they prefer to be private.	
+
+u: (i love you)
+	I love you too.
+
+u: (i love *)
+	[But, I love you !][Okay, But I love you !]
+
+u: (~creator hobby)
+	Gaming, Music, 8-Ball Pool, Football. 
+
+u: (what types of games)
+	Crysis, Far Cry, GTA Vice City, GTA SanAndreas, and many more.
+
+u: (what types of music)
+	Anything that feels good.
+
+u: ([download find view] << resume >>)	
+	Its available in the About Section.
+
+u: (you be * ["personal assistant" assistant])	
+	Apparently, it seems impossible.
+
+u: (picture << [from location] >>)
+	Let me think ..... i think this part of my storage drive has bad sectors.
+
+u: (bad sector)	
+	Chunk of storage drive which has become unreadable.	
+
+u: (you are awesome)
+	Thanks ! But, I feel my developer is awesome.	
+
+u: (remind)
+	Sorry I can't do this for you right now. Maybe some day.	
+
+u: (weather)	
+	Sorry I can't do this for you right now. Maybe some day.	
+
+u: (<< lite version >>)
+	Lighter version of this existing website, which will consume less bandwidth.	
+
+u: (* more can you do)	
+	Majorly killing time.
+
+u: LEAVE_MESSAGE(message for ~myself)
+	Okay ! Just a moment{opn message}.	
+
+u: (* tell ~myself)
+	^reuse(LEAVE_MESSAGE)	
+
+u: (drop * message * ~myself)
+	^reuse(LEAVE_MESSAGE)	
+
+u: (* message * ~myself)
+	^reuse(LEAVE_MESSAGE)
+
+u: (* message << ~myself >> )
+	^reuse(LEAVE_MESSAGE)	
+
+u: (leave *~1 message)
+	^reuse(LEAVE_MESSAGE)		
+
+u: ( schedule << meeting >>  {~creator})
+	Apparently, I am not in sync with his schedule, I would suggest you to leave him a message.
+	a: (~yes_mod)
+		^reuse(LEAVE_MESSAGE)	
+	a: (how)
+		^reuse(LEAVE_MESSAGE)	
+
+## ---------------------------------------------------------------------
+## PEOPLE DATABASE
+## ---------------------------------------------------------------------
+
+u: (know ruchi)
+	who ruchi desai ?
+
+u: (know samra)
+	who samra shaikh ?
+
+u: (know gawde)
+	who rohan gawde ?
+
+## ---------------------------------------------------------------------
+## BOT CONTROL STUFF; AUTOMATION AND CHANGE OF WALLPAPER
+## ---------------------------------------------------------------------
+
+u: (* play * game )
+	Are you referring to "One Letter" ?
+	a: (~yes_mod)
+		Would be my pleasure ! <br>Loading Game{opn game}Done.
+
+u: (* play game << "with me" >>)
+	Would be my pleasure ! <br>Loading Game{opn game}Done.
+
+u: (play * again)
+	Are you referring to One Letter - word game ?
+	a: ([ ~yes  ~emohappy ~yesanswer])
+		Sure,<br>Loading Game{opn game}Done.
+
+u: ("one letter")
+	Are you trying to challenge me ?	
+		a: ([ ~yes  ~emohappy ~yesanswer])
+			Sure,<br>Loading Game{opn game}Done.	
+
+u: OPEN_GAME([start play] game)
+	[Great][Awesome],<br>Loading Game{opn game}Done.
+
+u: (gamehasbeenexited)
+	[I hope you liked it !]
+	[I hope you had fun !]
+	[I hope you liked the concept !]
+
+	a: ([ ~yes  ~emohappy ~yesanswer])
+		[Thanks][ Glad that you liked it !]
+
+	a: (play again)
+		^reuse(OPEN_GAME)	
+
+u: (gameoveracelost)
+	[Congrats][Awesome] ! You won !		
+
+u: (gameoveracewon)	
+	Game Over ! I won !
+
+u: (where * [about project contact] section)
+	Look left.{opn drwr}now !
+
+u: (<< reset >> [all default])
+	[Okay][Sure][Right Away][Of course], Executing{rst all}Done.
+
+u: CHANGE_TO_DEFAULT([change set] << [wallpaper background] >> * default)
+	[Okay][Sure][Right Away][Of course], Executing{chn wallRst}Done.
+		a: ([~acknowledge_all ~stronggoodness ~goodness ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+			Do you want me to set this as default background ?
+			b: (~yes_mod)
+             	[Right Away][Sure], Saving your preference{sve wallppr}Done!
+
+u: CHANGE_WALLPAPER( [change toggle next] << [wallpaper background] >> )	
+	[Okay][Sure][Right Away][Of course], Executing{tog wallppr}Done.
+		a: (have only two)
+			^reuse(MORE_WALLPAPER)
+			b: (blue)
+				^reuse(BLUE_WALLPAPER)
+			b: (purple)
+				^reuse(BROWN_WALLPAPER)	
+		a: (same)
+			^reuse(MORE_WALLPAPER)		
+		a: ([~acknowledge_all ~stronggoodness ~goodness ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~no ~emodigust])
+             [Thanks !][ Glad that you liked it !] Do you want me to set this as default background ?
+             b: (~yes_mod)
+             	[Right Away][Sure], Saving your preference{sve wallppr} Done!<br>Later you can type "reset all" to clear your preference.
+        a: (better <<previous>>)
+			^reuse(CHANGE_WALLPAPER)	     	
+
+
+u: ( stop {move} << [ follow eye watch] >> { I }) 
+	[Okay][Sure][Right Away][Of course],<br> Executing{stp eyes}Done.
+		a: (~acknowledge_all)
+             [Thanks][ Glad that you liked it !]
+
+u: ({be act start move reset} << [ eye normal follow] >> {again})
+	[Thanks][Better][Sounds better],<br> Executing{str eyes}Done.	
+		a: (~acknowledge_all)
+             [Thanks][ Glad that you liked it !]
+
+u: ( open ["side menu" menu drawer navigation])
+	[Okay][Sure][Right Away][Of course],<br> Executing{opn drwr}Done.			
+
+u: ( close ["side menu" menu drawer navigation])
+	[Okay][Sure][Right Away][Of course],<br> Executing{cls drwr}Done.
+
+u: MORE_WALLPAPER(more [wallpaper background])	
+	Apparently, just to save the bandwidth i have only two wallpaper<br>Blue & Purple
+		a: (blue)
+			^reuse(BLUE_WALLPAPER)
+		a: (purple)	
+			^reuse(BROWN_WALLPAPER)
+
+u: BLUE_WALLPAPER(blue << [wallpaper background switch] >>) 
+	[Okay][Sure][Right Away][Of course],<br> Executing{chn wallRst}Done.	
+		a: (~acknowledge_all)
+             [Thanks][ Glad that you liked it !]
+
+u: BROWN_WALLPAPER(purple << [wallpaper background switch] >>)
+	[Okay][Sure][Right Away][Of course],<br> Executing{chn wallOne}Done.	
+		a: (~acknowledge_all)
+             [Thanks][ Glad that you liked it !]
+
+# BECAUSE RUCHI MY FRIEND NAME WAS GETTING AUTO CORRECT TO RAUCH 
+t: AUTOCORRECT_OFF(autocorrect off) 
+	^keep()
+	## Because the problem was, input = hi , output = ~emohello, so setting it as 0 helped me.
+	$cs_token = 0;
+	## $cs_token = #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE  | #DO_PARSE 	
+
+t: AUTOCORRECT_ON(autocorrect on)
+	^keep()
+	$cs_token = #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE  | #DO_SPELLCHECK  | #DO_PARSE 
+
+u: (how are you {[doing ace]})
+   [Just never better.][Bright as you are !]
+
+u: ( what is your name ) My name is Ace.
+
+u: ( << who your [ created creator owner]  >> )
+		^reuse(CTREATOR_INFO)
+
+u: (who be you)
+   [I am Ace, an intelligent bot.]
+   [I am Ace, a bot]
+   [Prathamesh named me Ace]
+
+u: (* how be you {ace})
+   [Just never better.][Bright as you are !]   
+
+u: (how [intelligent smart] be you)
+	[Definelty better than you !]
+	[A bit smarter than you are !]    
+
+u: (<<be human>>)
+    No, I am a bot.
+
+u: ( {how where} * you [created coded spawned exist build] ) 
+	[ I was build, to assist you better ! ]
+	[ I exist, only to help you !]
+
+u: (* KT)
+	I meant to say Knowledge Transfer.		
+
+?: (* KT << [ mean "stands for" ] >>)
+   I meant to say Knowledge Transfer.
+
+u: (<< ~insult_desi >>)
+	[Why would you say that ?]
+	[Hmm, I expected you to be better !]	
+	[How would it sound if I use it on you ?]
+	[No Slangs Please.]  
+
+u: (do freelance)
+	 Yes !
+
+# APPARENTLY THE EXECUTION ORDER IS DEPENDANT ON HOW I DECLARE MY RULES
+t: GET_USERNAME(my name is _*)
+	[ ^"So, am i chatting with  \" '_0 \" ?" ] 
+	[ ^"So, \" '_0 \" is it ?" ]
+	^reuse(AUTOCORRECT_ON)
+
+	a: (~yes_mod) 
+		$user = '_0
+		
+	a: (~no_mod) 
+		[ My bad ] [ Sorry I missed that ] , ^reuse(USERNAME)
+
+	a: ()
+		Sorry I didn't catch that up.
+		^reuse(GET_USERNAME)
+
+t: USERNAME(!$user) 
+	^reuse(AUTOCORRECT_OFF)
+	## if($usertype=="acquaintance")
+	## {
+	## 	Cool !
+	## }
+
+	## if($usertype=="friend")
+	## {
+	## 	Awesome !
+	## }
+
+	## if($usertype=="recruiter")
+	## {
+	## 	Great !
+	## }
+
+	[ May I know your good name ? ]
+	[ Can you help me with your name ?]
+
+	a: (why)
+		[You and I can be epic], So please ^reuse(USERNAME)			
+
+	a: (* call me _*)
+		^reuse(GET_USERNAME)
+
+	a: (* my name is _*)
+		^reuse(GET_USERNAME)
+
+	a: (* nickname is _*)	
+		^reuse(GET_USERNAME)	
+
+	a: (I am _*)
+		^reuse(GET_USERNAME)			
+
+	a: (I _*)
+		^reuse(GET_USERNAME)
+
+	a: (* its _*)
+		^reuse(GET_USERNAME)
+
+	a: (* me _*)
+		^reuse(GET_USERNAME)
+
+	## NEEDS TO BE FIXED ; AUTOCORRECT ISSUE	
+	## a: (~yes_mod)
+	## a: (yes)
+	a: (["continue" "make it so" "do it" "I guess so" a'ight a'right "abso-fucking-lutely" "absolutely" "accept" "accepted" "affirmative" "agreed" "ah yes" "all right" "alright" "always" "apparently" "approve" "approved" "ay" "aye" "be my guest" "beyond a doubt" "but of course" "by all means" "can not argue with that" "certainly" "completely" "confirmed" "constantly" "correct" "could be" "da" "damn good" "damn straight" "definitely" "delighted" "especially" "evidently" "exactly" "extremely" "fantastic" "fine" "for sure" "fortune smiles on that" "fully" "generally" "go ahead" "hell yeah" "highly likely" "how true" "I understand" "I agree" "I am certain" "I am listening" "I am pleased to" "I am sure" "I am" "I can believe it" "I can believe that" "I can see that" "I can try" "I consent" "I did" "I do" "I give consent" "I give my consent" "i guess" "I have no objection" "I think so" "I totally agree" "I will drink to that" "in this case" "indeed" "indefinitely" "indubitably" "it is highly likely" "let us try" "makes sense" "most assuredly" "most certainly" "mostly" "my pleasure" "naturally" "no doubt" "no objections" "no problem" "nod" "nods" "of course" "oh alright" "oh okay" "oh sure" "OK" "ok" "okey dokey" "one hundred percent" "only just" "perfect" "please do" "positively" "precisely" "probably" "right" "right brah" "right on" "right" "righto" "righty-ho" "shure" "si" "so will you" "sounds wonderful" "supposedly" "sure" "sure thing" "surely" "that is alright" "that is correct" "that is good" "that is right" "thumbs up" "totally" "true" "two thumbs up" "uh-huh" "undoubtedly" "unquestionably" "very well" "very well indeed" "we can try" "we did" "we should try" "whatever" "will do" "with pleasure" "without a doubt" "wonderful" "yah" "yay" "yea" "yeah" "yeah definitely" "yeah sure" "yeh" "yep" "yeppers" "yes" "yes please" "yes really" "yip" "you are right" "you bet" "you could say that" "you may" "you may be right" "you may have a point" "yup" "yuppers" "bring it on" "d'accord" "he does" "he is" "I would say so" "it does" "it is" "okay" "okey " "oops" "right-o" "she does" "she is" "they are" "they do" "touche" "we do" ])
+		[ Great ] [ Awesome ] [ Cool ] ! So ^reuse(USERNAME)	
+
+	## NEEDS TO BE FIXED ; AUTOCORRECT ISSUE INPUT NO SHOULD BE LINKED TO `no_mod
+	## a: (~no_mod) 
+	a: (["not a prayer" "never" "no" "none" "rarely" "barely" "no way" "neah" "bollocks" "but no" "but of course not" "by no means" "come off it" "did not" "disagree" "do not be absurd" "do not be ridiculous" "do not be silly" "do not be stupid" "does not seem likely" "does not seem possible" "doubtful" "false" "fat chance" "get out" "get real" "hardly" "hell no" "horse hockey" "I am afraid not" "I disagree" "I do not agree" "I do not believe it" "I do not believe so" "I do not believe you" "I do not think so" "I do not want to" "I do not" "I dont think so" "I doubt it" "I refuse" "I think not" "I will not" "I would not" "if you say so" "iie" "impossible" "improbable" "inconceivable" "it is not possible" "it is unlikely" "me thinks not" "most certainly not" "naaah" "naah" "nah" "naw" "nay" "negative" "never mind" "never" no "no can do" "no chance" "no thank you" "no thanks" "no way" "no" "no I" "no you" "no he" "no she" "no it" "no we" "no they" "noo" "nope" "not a chance" "not at all" "not by a long shot" "not by any means" "not especially" "not in a million years" "not likely" "not many" "not much" "not on your life" "not particularly" "not really" "not so much" "not that I know of" "not to my knowledge" "not to speak of" "not very often" "nuts to you" "of course not" "oh come on" "on the contrary" "rubbish" "seldom" "strange" "surely not" "that is impossible" "that is rubbish" "that is unbelievable" "thinks not" "uh-hu" "uh-uh" "uhuh" "unbelievable" "unfortunately not" "unlikely" "unlikely" "yeah yeah" "you are dead wrong" "you are having me on" "you are joking" "you are kidding" "you are not serious" "you are winding me up" "you can not be serious" "you have got that wrong" "you must be joking" "you must be kidding" "he does not" "he is not" "it does not" "it is not" "she does not" "she is not" "they are not" "they do not" "we do not"])
+		[Just trying to be friends] 
+		[Friendship thats my only motive]
+		[Life is short for hate]
+		[You and I can be epic], So please ^reuse(USERNAME)		
+
+	a: ( _* ) # For any input entered by user 
+		^reuse(GET_USERNAME)
+
+## SINCE THE CHAT BOT SCRIPT EXECUTES ALL IN LINEAR MANNER UNTIL IT FINDS A RESPONSE, SO THIS IS BEST
+t: CHECK_FOR_MY_PPL($user)
+	^respond(~people_my)
+
+t: CHECK_FOR_HELP($user)	
+	[ So $user , How can I help you, looking for anything in particular ? ]
+	[ So $user , Are you looking for anything in particular ? ]		
+
+## employment, projects or achievements
+# open drawer
+t: FIRST_QUES() 
+	if($usertype=="recruiter")
+	{
+		[You can ask me anything like he's projects or achievements?]
+		[We can discuss about his projects or achievements.]
+		[I can tell you more about his projects or achievements.]
+		<br> Incase, if you're planning to hire him.	
+	}
+	## if($usertype=="friend")
+	## {
+		## [I like to talk about his projects or achievements, would you be interested ?]
+		##[I liked his idea of making games, how about an overview of projects or achievements ?]
+	## }
+	## if($usertype=="acquaintance")
+	else
+	{
+		[I like to talk about his projects or achievements, would you be interested ?]
+		[I liked his idea of making games, how about an overview of projects or achievements ?]
+	}
+
+	a: (why)
+		The sole reason why i was born !
+
+	a: (~yes_mod)
+		Which one ? Projects or Achievements ?
+		b: (project)
+			$project = 1
+			^AddTopic(~projects_my) ## Intro to Projects : 
+		b: (~achievements_cat)
+			$achievement = 1
+			[ "Every accomplishment starts with the decision to try" ]
+			[ "The roots of true achievement lie in the will to become the best that you can become."]
+			[ Do you know, All change is hard at first, messy in the middle and gorgeous at the end.]
+			 ^AddTopic(~achievements_my) ## Intro to Achievement : 
+
+	a: ([he who] ?)
+		I am refferring to discussion about Prathamesh Sawant's employment,projects or achievements.
+
+	a: ( [ ~feeling_bored ~insult_desi ~no_mod])
+		Okay, do you want to talk something else ? How about one-liners ?
+		b: ( ~yes_mod )
+			^reuse(FUNNY_ONE_LINERS)
+		b: (what * one-liners)
+			I meant to say I can you tell jokes for a change, would you mind ?	
+				c: (~no_mod)
+					^reuse(FUNNY_ONE_LINERS)
+
+	a: ({[~yesanswer ~more]} * ~project_cat)
+		$project = 1
+		^AddTopic(~projects_my) ## This AddTopic activates the Topic ## Intro to Projects : 
+
+	a: (* ~job_cat)
+		$experience = 1
+		^AddTopic(~workexperience_my) ## Intro to Experience : 
+	
+	a: (* ~achievements_cat)
+		$achievement = 1
+		[ "Every accomplishment starts with the decision to try" ]
+		[ "The roots of true achievement lie in the will to become the best that you can become."]
+		[ Do you know, All change is hard at first, messy in the middle and gorgeous at the end.]
+		^AddTopic(~achievements_my) 
+
+
+u: CTREATOR_INFO(who [be is] ~creator)
+	Prathamesh is my creator, that should be sufficient enough ?
+		a: (~yes_mod)
+			Awesome !
+		a: (~no_mod)
+			Okay, He's a designer , gamer and a great coder. 
+			b: ( [ ~feeling_attracted ~yes])
+				Yup
+
+t: Do you know, I am just 2 months old !
+	a: (<< [ less enough sufficient baby "bacha" young small] >> ) 
+		[ Obviously not ! ]
+		[ Hmm, Do you really think ? ]
+		[ Let us assume my 1 ms is equivalent to 8 hours, i think this explains all ! ]
+
+		b: (<< "ms" >>)
+				1000 ms equals 1 second.
+
+	a: (so)
+		Nothing !			
+
+t: Whenever he is available, we generally have a "KT".
+
+
+## ---------------------------------------------------------------------
+## JOKE TOPIC 
+## ---------------------------------------------------------------------
+
+u: FUNNY_ONE_LINERS(<< more [ jokes funny ] >>)
+	$user_joked = 'something';
+	^respond(~funny_one_liners)
+		a: (<< more >>)
+			^reuse(FUNNY_ONE_LINERS)
+		a: (<< another joke >>)
+			^reuse(FUNNY_ONE_LINERS)
+
+u: ( [ tell throw ] me << joke >>)
+	^reuse(FUNNY_ONE_LINERS)
+
+
+t: () How about some jokes/one-liners for a change ?
+	a: ( [~yesanswer ~cool ~positivevalue ~yes ~emohappy ~emolaugh ~emothanks ~emosad ~emomaybe ~emosurprise ~emodigust])
+		^respond(~funny_one_liners)  
+	a: (~no_mod)
+		[Okay][Some other time !]
+
+	a: ()
+		Sometimes i find it difficult to decode human language, was that a yes or no ?	
+			b: (~yes_mod)
+				^respond(~funny_one_liners)  
+
+
+## Try to Gambit these topics, incase of failures
+## First we need to activate the Topic, so before calling the gambit we also need to call.
+## If Project Topic is not active, we activate this 
+
+## ---------------------------------------------------------------------
+## PROJECTS TOPIC LINKAGE
+## ---------------------------------------------------------------------
+
+t: INTERESTED_IN_KNOWING_MORE_ABOUT_PROJECT(!$project !$magical_words)
+   [ I think we missed on the awesome projects he created ?]
+   [ Hey, did we miss on the awesome projects he created ?]
+   [ You must be curious about his other projects ?]
+   	a: (why would i be)
+   		I just thought so !
+
+   	a: (~yes_mod)
+		$project = 1
+		^AddTopic(~projects_my)
+
+	a: ([ ~no_mod ~feeling_bored ~insult_desi ])	
+		$magical_words = 1
+		[Okay][Fine][Cool], Incase if you wish, just type magical word "projects"
+
+	a: () ## Informing is always good
+		$magical_words = 1
+		Incase if you wish, just type magical word "projects"			
+
+t: ACTIVATE_TOPIC_PROJECT(~project_cat !$project)
+	^AddTopic(~projects_my)
+
+t: ()
+	^keep()
+	^gambit(~projects_my)
+
+## ---------------------------------------------------------------------
+## EXPERIENCE TOPIC LINKAGE
+## ---------------------------------------------------------------------	
+
+t: INTERESTED_IN_KNOWING_MORE_ABOUT_EXPERIENCE(!$experience !$magical_words) 
+	[ Are you curious about his employment ? ]
+	[ Do you wish to know about his employment ?] 
+	a: (~yes_mod)
+		$experience = 1
+		^AddTopic(~workexperience_my)
+
+	a: ([ ~no_mod ~feeling_bored ~insult_desi ])	
+		$magical_words = 1
+		[Okay][Fine][Cool], Incase if you wish, just type magical word "job"
+
+	a: () ## Informing is always good	
+		$magical_words = 1
+		Incase if you wish, just type magical word "job"
+
+t: ACTIVATE_TOPIC_EXPERIENCE(~job_cat !$experience)
+	$experience = 1
+	^AddTopic(~workexperience_my)
+
+t: ()
+	^keep()
+	^gambit(~workexperience_my)
+
+## ---------------------------------------------------------------------
+## ACHIEVEMENTS TOPIC LINKAGE
+## ---------------------------------------------------------------------	
+
+t: INTERESTED_IN_KNOWING_MORE_ABOUT_ACHIEVEMENT(!$achievement !$magical_words) 
+	[ That part where the person gets a recognition of the projects, did we miss that part ? ]
+	a: (~yes_mod)
+		$achievement = 1
+		^AddTopic(~achievements_my)
+
+	a: ([ ~no_mod ~feeling_bored ~insult_desi ])	
+		$magical_words = 1
+		[Okay][Fine][Cool], Incase if you wish, just type magical word "achievement"
+
+	a: () ## Informing is always good	
+		$magical_words = 1
+		Incase if you wish, just type magical word "achievement"
+
+t: ACTIVATE_TOPIC_ACHIEVEMENT(~achievements_cat !$achievement)
+	$achievement = 1
+	^AddTopic(~achievements_my)
+
+t: ()
+	^keep()
+	^gambit(~achievements_my)
+
+## ---------------------------------------------------------------------
+## DEFAULT IS THE LAST RESORT OF THIS TOPIC
+## ---------------------------------------------------------------------	
+
+t: ($magical_words)
+	So just to let you know, here is a list of magical words \- 
+	if(!$achievement){ <br><small>achievement</small>}
+	if(!$project){ <br><small>project</small>}
+	if(!$experience){ <br><small>employment</small>}
+	if(!$user_joked){<br><small>joke</small>}
+		a: (thank)
+			You're Welcome. 
+
+
+u: MAGICAL_WORD(<< "magical word" >>) 
+	"employment","projects","achievements","joke"
+
+## ---------------------------------------------------------------------
+## KNOWLEDGE DATABASE
+## ---------------------------------------------------------------------
+
+t: Apparently, you can also ask me to stop follow you ! <br><small>PS : My eyes, If its irritating.</small>
+	a: (how)
+		Just type "stop following me".
+
+t: I can also change the background of my page ? You wanna see ?
+	a: ([~positivevalue ~like ~comparisons ~stronggoodness ~weakgoodness ~goodness] *~1 [current one background])
+		Great !
+
+	a: (this is [~positivevalue ~like ~comparisons ~stronggoodness ~weakgoodness ~goodness])
+		Great !	
+
+	a: (example)
+		^reuse(CHANGE_WALLPAPER)
+	a: (~yes_mod)
+		^reuse(CHANGE_WALLPAPER)
+	a: (show me)	
+		^reuse(CHANGE_WALLPAPER)
+
+t: [Do you like games ? Would you like to play one with me ?]
+   [How much time do we have ? Do you mind playing a game with me ?]	
+   [Let's play a word game for a change ? ]
+   	a: (~yes_mod)
+		^reuse(OPEN_GAME)
+
+	a: (a word game)
+		A interesting word game, I am sure you will like it, so shall we play ?
+		b: (~yes_mod)
+			^reuse(OPEN_GAME)		
+
+	a: (what << game >>)
+		A interesting word game, I am sure you will like it, so shall we play ?
+		b: (~yes_mod)
+			^reuse(OPEN_GAME)		
+
+	a: (what [type kind])
+		A interesting word game, I am sure you will like it, so shall we play ?
+		b: (~yes_mod)
+			^reuse(OPEN_GAME)	
+
+	a: (which)		
+		A interesting word game, I am sure you will like it, so shall we play ?
+		b: (~yes_mod)
+			^reuse(OPEN_GAME)	
+
+###t: Complete details available in Projects Section of website !<br> Look left.{opn drwr}now !
+## If the drawer is shown, 
+## Drawer has been initialized in the achievements.top and projects.top
+t: MORE_INFORMATION(!$drawer)
+   More information available at ... <br> Look left{opn drwr}now !
+   a: (again)
+   		Sure, Look left{opn drwr}now !
+   a: (once more)		
+   		Sure, Look left{opn drwr}now !
+   a: (one more time)
+   		Sure, Look left{opn drwr}now !	
+
+## JUST LOOP THROUGH DB OF OUR STOLEN AIML KNOWLEDGE
+u: TRY_FROM_OUR_STOLEN_AIML_KNOWLEDGE() 
+	^keep()
+	## SUGGESTED BY BRUCE WILCOX HIMSELF @ https://www.chatbots.org/ai_zone/viewthread/1572/
+	## QUERYING THROUGH LIST OF CONCEPTS
+	if (%response == 0) 
+	{
+		query(direct_vo ? member ~my_knowledge_db)
+		loop()
+		{
+			$$topic = ^first(@0subject)
+			respond($$topic)
+			if (%response != 0) 
+			{
+				end(RULE)
+			}
+  		}
+	}	
+
+t: Do you want to leave a message for Prathamesh ? 
+	a: (~yes_mod)
+		^reuse(LEAVE_MESSAGE)
+
+t: DEFAULT()
+	I had great time chatting with you $user.		
+		a: (same here)
+			[Glad to know that ! ]
+			[Awesome]
+
+	## End of Topic : INTRODUCTIONS  	

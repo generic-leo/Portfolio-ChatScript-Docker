@@ -1,0 +1,227 @@
+ 
+# ======================================================================================
+# 19 August 2016
+# HAVE MADE CHANGES IN TEXTING.TXT ; HAVE ADDED yess yesss , etc also hmm hmmm hmmmm etc Make sure to move that file from LIVEDATA 
+# ======================================================================================
+
+# BECAUSE SOME HOW CHATSCRIPT MISSED ofcourse WORD 
+concept: ~creator ( he create creator prathamesh prathamesh's sawant sawant's "Prathamesh Sawant" "prathamesh sawant" )
+concept: ~myself ( ~creator Leo you master himself )
+concept: ~yes_mod ( ofcourse ~yes ~emohappy )
+concept: ~no_mod ( ~no ~emosad )
+concept: ~insult_desi ( "aand mat kaha" lavde bakrichod balatkaari laude lavde betichod bhenchod lode bhosdi bihari bhosdike choot randi rand chudasi chutia chootia gaand gaandu gandu gandmasti jhaat jhatoo kaminey kutha sala khajoor madarchod mume fudi fudhi lund tatti chuglee bhos danda bable chudaye bhosada bhosade tharki chut bhadwe bhosad bhosdee bhundi dalli gand lauda louda harami haram kuthri suwar teri tuzya aaichi puchi chutiya bc harami asshole landfakir ~insults )
+concept: ~project_cat ( project work hardwork teamwork )
+concept: ~job_cat ( professional_experience ~job )
+
+
+topic: ~introductions repeat (~emogoodbye ~emohello ~emohowzit name here ) 
+
+## t: ENTRY() Bot just initiated !
+
+t: (%input<%userfirstline %input > 0)
+	^keep()
+	^reuse(GREET_FIRSTTIME)
+
+# Very first thing 
+#!x matches every time on startup of a new conversation
+t: ( %input<%userfirstline ) 
+	^keep()   
+	[Hi, Welcome to my Website.][Hi, Welcome to my Webpage.]
+
+t: GREET_FIRSTTIME()
+	[ Hi , I am Tars !]
+	[ Hi, Tars here !]
+	[ Hi, They call me Tars !]
+
+# BECAUSE RUCHI MY FRIEND NAME WAS GETTING AUTO CORRECT TO RAUCH 
+t: AUTOCORRECT_OFF(autocorrect off) 
+	$cs_token = #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE  | #DO_PARSE 	
+
+t: AUTOCORRECT_ON(autocorrect on)
+	$cs_token = #DO_INTERJECTION_SPLITTING  | #DO_SUBSTITUTE_SYSTEM   | #DO_NUMBER_MERGE | #DO_DATE_MERGE  | #DO_PROPERNAME_MERGE  | #DO_SPELLCHECK  | #DO_PARSE 
+
+u: (how be you)
+   [Just never better.][Bright as you are !]
+
+u: ( what is your name ) My name is Tars.
+
+u: ( << who your [ created creator owner]  >> )
+		^reuse(CTREATOR_INFO)
+
+u: (who be you)
+   [I am Tars, an intelligent bot.]
+   [I am Tars, a bot]
+   [Prathamesh named me Tars]
+
+u: (how [intelligent smart] be you)
+	[Definelty better than you !]
+	[A bit smarter than you are !]    
+
+u: (<<be human>>)
+    No, I am a bot.
+
+u: ( {how where} * you [created coded spawned exist build] ) 
+	[ I was build, to assist you better ! ]
+	[ I exist, only to help you !]
+
+u: (<< ~insult_desi >>)
+	[Why would you say that ?]
+	[Hmm, I expected you to be better !]	
+	[How would it sound if I use it on you ?]
+	[We can always make this life a better place - MJ ]
+
+# APPARENTLY THE EXECUTION ORDER IS DEPENDANT ON HOW I DECLARE MY RULES
+t: GET_USERNAME(my name is _*)
+	[ So, am i chatting with  \" '_0 \" ? ] 
+	[ So, \" '_0 \" is it ? ]
+	a: (~yes_mod) 
+		$user = '_0
+		^reuse(AUTOCORRECT_ON)
+		[ So $user , How can I help you, looking for anything in particular ? ]
+		[ So $user , Are you looking for anything in particular ? ]
+	a: (~no_mod) 
+		[ My bad ] [ Sorry I missed that ] , ^reuse(USERNAME)
+
+t: USERNAME(!$user) 
+	^reuse(AUTOCORRECT_OFF)
+	[ May I know your good name ? ]
+	[ Can you help me with your name ?]
+
+	a: (* call me _*)
+		^reuse(GET_USERNAME)
+
+	a: (I _*)
+		^reuse(GET_USERNAME)
+
+	a: (* its _*)
+		^reuse(GET_USERNAME)
+
+	a: (* me _*)
+		^reuse(GET_USERNAME)
+
+	a: (* nickname is _*)	
+		^reuse(GET_USERNAME)
+
+	a: (* my name is _*)
+		^reuse(GET_USERNAME)
+
+	a: (~yes_mod)
+		[ Great ] [ Awesome ] [ Cool ] ! So ^reuse(USERNAME)	
+
+	a: (~no_mod) 
+		[Just trying to be friends] 
+		[Friendship thats my only motive]
+		[Life is short for hate]
+		[You and I can be epic], So please ^reuse(USERNAME)		
+
+	a: ( _* ) # For any input entered by user 
+		^reuse(GET_USERNAME)
+
+# open drawer
+t: FIRST_QUES() 
+	[You can ask me anything like he's education, projects , biography ?]
+	[We can discuss about his education, projects & biography.]
+	[I can tell you more about his eduction, projects & biography.]
+
+	a: ( [ ~feeling_bored ~insult_desi ])
+		Ok, do you want to talk something else ? How about one-liners ?
+		b: ( ~yes )
+			^reuse(FUNNY_ONE_LINERS)
+
+## u: ( << ~creator ~project_cat >>) 
+##	^gambit(~myprojects)
+
+## u: (* [ he ~creator ] ~education_cat)	
+## 	^gambit(~myeducation)
+
+## u: (* [ he ~creator ] ~job_cat )
+## 	^gambit(~myprofessional_experience)
+
+
+u: CTREATOR_INFO(who [be is] ~creator)
+	Prathamesh is my creator, that should be sufficient enough ?
+		a: (~yes_mod)
+			Awesome !
+		a: (~no_mod)
+			Okay, He's a gamer , lover and a great coder. 
+			b: ( [ ~feeling_attracted ~yes])
+				Yup
+
+
+t: I know him since 3 months !
+
+t: Whenever he is available, we generally have a KT :D
+
+?: (<< KT >>)
+   I meant to say Knowledge Transfer.
+
+
+
+u: FUNNY_ONE_LINERS(<< more [ jokes funny ] >>)
+	$user_joked = 'something';
+	^respond(~funny_one_liners)
+		a: (<< more >>)
+			^reuse(FUNNY_ONE_LINERS)
+		a: (<< another joke >>)
+			^reuse(FUNNY_ONE_LINERS)
+
+u: (tell me << joke >>)
+	^reuse(FUNNY_ONE_LINERS)
+
+# ======================================================================
+# RANDOM TOPIC SHOULD BE THROWN HERE 
+# ======================================================================
+# LAST RESORT
+# Bruce : You can reset all topics using ^reset(topic *) , since * is for all 
+# This can be used at end 
+t: DEFAULT()
+	^keep()
+	[ ^reuse(HI) ] [ ^reuse(FUNNY_ONE_LINERS_1) ] 
+
+
+
+# WE CAN PUT THE RANDOM SENTENCES HERE HERE 	
+
+t: FUNNY_ONE_LINERS_1()
+	[I have a decent sense of humor, how about one ^reuse(THAT_WORD) joke ?]
+	[How about one ^reuse(THAT_WORD) joke ?]
+	[Do you like joke's ?]
+	[How about a one-liner for a change ?]
+	[Do you like one-liner ?]
+
+	a: (~yes_mod)
+		^reuse(FUNNY_ONE_LINERS)
+
+	a: (~no_mod)
+		[hmmm][Okay][Fine][Sad]	
+
+	a: ()
+		was that a yes or no ?
+		b: (~yes_mod)
+			^reuse(FUNNY_ONE_LINERS)
+
+		b: (~no_mod)
+			[hmmm][Okay][Fine][Sad]
+
+u: THAT_WORD(somethingthatisdifficulthere)
+	if($user_joked)
+	{
+		more
+	}
+	else
+	{
+		[]
+	}
+
+
+t: HI()  
+	if($user)
+	{
+		^respond(~people)
+	}
+	else
+	{
+		[Hello] [Hi] [Hey], [talk] [speak] [say something] to me !	
+	}
+
+

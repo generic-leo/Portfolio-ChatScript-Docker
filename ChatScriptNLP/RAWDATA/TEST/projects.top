@@ -1,0 +1,22 @@
+concept: ~project_reference [ project website link reference proof projectwork live screenshot picture ]
+
+topic: ~myprojects keep repeat [project projects work hardwork teamwork experience]
+
+t: His first project was a Android Game, running live on play store with One K Plus Ratings with average at Three point Four
+
+u: FIRST_PROJECT_LINK( << first project { ~project_reference } >> )
+	visit google[dot]com 	
+
+t: His second project was specially made for Engineering Students 
+
+t: (~project_reference) 
+		^reuse(FIRST_PROJECT_LINK)
+
+# THIS RESETS ALL THE RULES AND POP OUT FROM TOPIC 
+t: DEFAULT() 
+	^keep() 
+	^poptopic(~myprojects)
+	^reset(topic ~myprojects)
+	^gambit(~introductions)
+	
+

@@ -1,0 +1,10 @@
+﻿Command: :build 0
+Command: :build leo
+Command: :build leo
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 1  hi ==> Yo, speak to me!  When:Jul03'16-01:20:11 Why:~introduction.0.0=HI.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 2  ok ==> Hey, how can i help you?  When:Jul03'16-01:20:16 Why:~introduction.1.0.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 3  tell about love ==> Hi, how can i help you?  When:Jul03'16-01:20:23 Why:~introduction.1.0.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 4  i love ruchi ==> Ruchi desai you mean?  When:Jul03'16-01:20:31 Why:~introduction.9.0.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 5  yup ==> Hmm, Somebody is gonna get hurt real bad!  When:Jul03'16-01:20:35 Why:~introduction.9.1.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 6  i love ruchi ==> Ruchi desai you mean?  When:Jul03'16-01:20:51 Why:~introduction.9.0.~control.9.0  
+Respond: user:3fc68d3087dfda98ddfc27aeedd20210 bot:leo ip:127.0.0.1 (~introduction) 7  nope ==> Ok, kool!  When:Jul03'16-01:20:53 Why:~introduction.9.2.~control.9.0  

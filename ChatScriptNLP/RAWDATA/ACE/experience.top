@@ -1,0 +1,53 @@
+topic: ~workexperience_my ("professional experience" "work experience" job mobitrail "first job" work "work history" employment)
+
+## "Blocking a topic from accidental access"
+## Link : ftp://ftp.heanet.ie/disk1/sourceforge/c/ch/chatscript/ChatScript%20Advanced%20User%20Manual.pdf
+t: (!~) ^fail(topic)
+
+u: (talk about experience) 
+	^gambit(~)
+
+t: () 
+ 	^reuse(WE_CURRENT)
+
+t: ()
+	^reuse(TECHNOLOGIES)
+
+u: WE_CURRENT(<< work experience >>) 
+	^keep()
+	^repeat()
+	He joined Mobitrail as a Software Engineer in Nov,2014. Currently he is working on Android Projects specially designed to provide Banking Solutions.
+
+u: JOB_OFFER(<< job offer "change of job" "job change">>)
+	^keep()
+	^repeat()
+	That sound's interesting. Please leave him a message on the Contact Page.
+
+u: TECHNOLOGIES(<< [technologies "programming languages"] >> [ worked used ] )
+	^keep()
+	^repeat()
+	He has worked on C, C++, JAVA, SQL, Android App/Game, HTML, CSS, PHP (OOPHP).	
+
+u: DESIGNATION(~creator << {designation position} >> )
+	^keep()
+	^repeat()
+	Apparently, he is working as a Software Engineer.
+		a: (<< [where exactly] >>)
+			^reuse(COMPANY_LOCATION)
+
+u: COMPANY_LOCATION(mobitrail << [location based] >>)
+	^keep()
+	^repeat()
+	MobiTrail, a leading developer and distributor of mobile games and applications, established in 2006.
+
+u: COMPANY_ADDRESS(mobitrail << address >>)
+	^keep()
+	^repeat()
+	205, Triumph Estate, Near Western Express Highway, Goregaon East, Mumbai, Maharashtra, India, Mumbai, India 400063
+
+
+
+
+
+
+

@@ -1,0 +1,259 @@
+concept: ~project_reference ( website link reference proof projectwork )
+
+# GITHUB
+concept: ~github (github GitHub Git-hub) 
+concept: ~coded (~build programmed programming "programming language" coded language) 
+
+# PROJECTS LINKS 
+concept: ~project_bluffmaster ( "1st project" "first project" bluffmaster "bluffmaster project" bluff-master)
+concept: ~project_collegeguide ( "2nd project" "second project" collegeguide "college guide project" college-guide "college guide" )
+concept: ~project_quotes ( "3rd project" "third project" "quotes project" "quotes live project" "quotes live wallpaper" "wallpaper project" quotes-live-wallpaper )
+concept: ~library_simpletv ( "1st library" "first library" "simple textview" simpletextview androidtextview textview )
+concept: ~library_simplearcloader ( "2nd library" "second library" "simple arc loader" simplearcloader arcloader androidloader loader )
+
+topic: ~projects_my keep ( bluffmaster collegeguide quoteslivewallpaper simplearcloader simpletextview project website link reference proof projectwork live screenshot picture projects hardwork teamwork)
+
+## "Blocking a topic from accidental access"
+## Link : ftp://ftp.heanet.ie/disk1/sourceforge/c/ch/chatscript/ChatScript%20Advanced%20User%20Manual.pdf
+t: (!~) ^fail(topic)
+
+u: (talk about project) 
+	^gambit(~)
+
+## 	---------------------------------------------------------------------
+##	ORIGINAL FLOW AT THE BOTTOM 
+## 	---------------------------------------------------------------------
+
+u: ([bluffmaster collegeguide quoteslivewallpaper simplearcloader simpletextview] << time >> ~coded)
+	^keep()
+	^repeat()
+   [ There is never just one thing that leads to success of a Project. I feel it always a combination of passion, dedication,day and night hard work.]
+   [ Completion of a Projects comes from hours, days, weeks and months of constant work and dedication.]
+
+## ---------------------------------------------------------------------
+## BLUFF MASTER 
+## ---------------------------------------------------------------------
+
+#! whats the name of your first project ?
+u: BLUFF_NAME(first project << name >> )
+	^keep()
+	^repeat()
+	BluffMaster 
+
+u: BLUFF_PROJECT_INFO(* ~project_bluffmaster << [information info about] >> )
+	^keep()
+	^repeat()
+	Bluffmaster android game is based on a very popular Indian card game known as "Charso Bees". Currently having 1000+ ratings.
+
+u: BLUFF_PROJECT_LINK( << ~project_bluffmaster ~project_reference >> )
+	^keep()
+	^repeat()
+	[Here you go] [Sure] <a href="http://goo.gl/vYCUkS">http://goo.gl/vYCUkS</a>
+
+		a: ([~positive_social ~stronggoodness ~weakgoodness ~goodness])
+			^reuse(ACKNOWLEGDE)
+
+u: BLUFF_PROJECT_LANGUAGE_USED(~project_bluffmaster << ~coded >>)
+	^keep()
+	^repeat()
+	^reuse(BLUFF_NAME) has been build using Java with help of Android Studio.				
+
+## ---------------------------------------------------------------------
+## COLLEGE GUIDE 	
+## ---------------------------------------------------------------------
+
+u: COLLEGE_NAME(second project << name >> )
+	^keep()
+	^repeat()
+	College Guide 
+
+u: COLLEGE_GUIDE_PROJECT_INFO(* ~project_collegeguide << [information info about] >> )
+	^keep()
+	^repeat()
+	College Guide application was specially design to help student who are planning to take admission in engineering colleges. 
+
+u: COLLEGE_GUIDE_PROJECT_LINK( << ~project_collegeguide ~project_reference >> )
+	^keep()
+	^repeat()
+	[Here you go] [Sure] <a href="http://goo.gl/n62jn2">http://goo.gl/n62jn2</a>
+
+		a: ([~positive_social ~stronggoodness ~weakgoodness ~goodness])
+			^reuse(ACKNOWLEGDE)
+
+u: COLLEGE_GUIDE_LANGUAGE_USED(~project_collegeguide << ~coded >>)
+	^keep()
+	^repeat()
+	^reuse(COLLEGE_NAME) has been build using Java with help of Android Studio.	
+
+u: (<< newspaper >>)
+	College Guide has been featured in Newspapers (Maharashtra Times, NavBharat Times, Prahar).			
+
+## ---------------------------------------------------------------------
+## QUOTES LIVE WALLPAPER
+## ---------------------------------------------------------------------
+
+u: QUOTES_NAME(third project << name >> )
+	^keep()
+	^repeat()
+	Quotes Live Wallpaper
+
+u: QUOTES_LW_PROJECT_INFO(* ~project_quotes << [information info about] >> )
+	^keep()
+	^repeat()
+	This application is an offline application which allows the user to set Quotes as Live Wallpaper. It has 40,000 quotes with 5 different sections.
+
+u: QUOTES_LW_PROJECT_LINK( << ~project_quotes ~project_reference >> )
+	^keep()
+	^repeat()
+	[Here you go] [Sure] <a href="http://goo.gl/g6OWjP">http://goo.gl/g6OWjP</a>	
+
+		a: ([~positive_social ~stronggoodness ~weakgoodness ~goodness])
+			^reuse(ACKNOWLEGDE)
+
+
+u: QUOTES_LW_LANGUAGE_USED(~project_quotes << ~coded >>)
+	^keep()
+	^repeat()
+	^reuse(QUOTES_NAME) has been build using Java with help of Android Studio.
+
+## ---------------------------------------------------------------------
+## GIT HUB PROJECTS
+## ---------------------------------------------------------------------
+
+u: GITHUB_PROFILE(~github << [profile link] >>)
+	^keep()
+	^repeat()
+	[GitHub Profile :][GitHub Profile Link :] <a class="color-white simple-link" href="https://github.com/generic-leo">generic-leo</a>
+
+u: GITHUB_PROJECT_LIST(~github list)
+	^keep()
+	^repeat()
+	"SimpleArcLoader" "SimpleTextView"
+
+## SIMPLE LOADER	
+
+u: SIMPLE_LOADER_NAME(first * library << name >> )
+	^keep()
+	^repeat()
+	Simple Arc Loader
+
+u: SIMPLE_LOADER_INFO(* ~library_simplearcloader << [information info about] >>)
+	^keep()
+	^repeat()
+	Simple Arc Loader : A simple custom loader for android. 
+
+u: SIMPLE_LOADER_PROJECT_LINK(<< ~library_simplearcloader ~project_reference >> )
+	^keep()
+	^repeat()
+	[Here you go] [Sure] <a href="http://goo.gl/n0wfeb">http://goo.gl/n0wfeb</a>	
+
+		a: ([~positive_social ~stronggoodness ~weakgoodness ~goodness])
+			^reuse(ACKNOWLEGDE)
+
+u: SIMPLE_LOADER_LANGUAGE_USED(~library_simplearcloader << ~coded >>)
+	^keep()
+	^repeat()
+	^reuse(SIMPLE_LOADER_NAME) has been build using Java with help of Android Studio.
+
+## SIMPLE TEXT VIEW
+
+u: SIMPLE_TV_NAME(second * library << name >> )
+	^keep()
+	^repeat()
+	Simple TextView
+
+u: SIMPLE_TV_INFO(* ~library_simpletv << [information info about] >>)
+	^keep()
+	^repeat()
+	Simple TextView : Android Custom TextView for using custom fonts , linear gradient and setting up Html Text from XML. 
+
+u: SIMPLE_TV_PROJECT_LINK(<< ~library_simpletv ~project_reference >> )
+	^keep()
+	^repeat()
+	[Here you go] [Sure] <a href="http://goo.gl/96DpNt">http://goo.gl/96DpNt</a>	
+
+		a: ([~positive_social ~stronggoodness ~weakgoodness ~goodness])
+			^reuse(ACKNOWLEGDE)
+
+u: SIMPLE_TV_LANGUAGE_USED(~library_simpletv << ~coded >>)
+	^keep()
+	^repeat()
+	^reuse(SIMPLE_TV_NAME) has been build using Java with help of Android Studio.
+
+## ---------------------------------------------------------------------
+## MISCELLANOUS 
+## ---------------------------------------------------------------------	
+
+u: PROJECT_INFO( * project << [information info list] >> )
+	^keep()
+	^repeat()
+	Which one Bluffmaster,  College Guide, Quotes Live Wallpaper, SimpleArcLoader, SimpleTextView ?
+
+
+u: (<[bluffmaster collegeguide "college guide" quoteslivewallpaper "quotes live wallpaper" "simple arc loader" simplearcloader "simple text view" simpletextview])
+	^keep()
+	^repeat()
+	[What about it ?]
+	[Please can you be more specific ?]
+		a: (<< [example like] >>)	
+			\"Project Name\" info/link ? 
+
+
+## Anything that is not listed here like , one instance i can think of is "is college guide a paid or free version "
+u: (<< [ bluffmaster collegeguide quoteslivewallpaper simplearcloader simpletextview ] >>)
+	^keep()
+	^repeat()
+	[ My bad I missed this one, I will just cross check with Prathamesh ASAP !]
+	[ I missed this one, I will just cross check with Prathamesh ASAP !]
+	[ I missed this one, please free to leave him a message !]
+
+u: ACKNOWLEGDE(thank)
+	^keep()
+	^repeat()
+	[You're Welcome]
+	[Dont mention it !]
+	[You're most Welcome]	
+
+
+## 	---------------------------------------------------------------------
+##	ORIGINAL FLOW 
+## 	---------------------------------------------------------------------
+
+## ^reuse(BLUFF_PROJECT_INFO)
+t: His 1st Project "Bluffmaster" is an Android Game with currently 1000+ Ratings on Google Play Store.
+   [<br>Would you like to hear about next project ?]
+	a: (* bluffmaster)
+		^reuse(BLUFF_PROJECT_INFO)
+
+	a: (~yes_mod)	
+		2nd project "College Guide" has been featured in 3 Newspaper's. 
+
+			b: (<< newspaper >>)
+			College Guide has been featured in Newspapers (Maharashtra Times, NavBharat Times, Prahar).
+
+			b: (<< "college guide" >>)
+				^reuse(COLLEGE_GUIDE_PROJECT_INFO)
+
+## ^reuse(COLLEGE_GUIDE_PROJECT_INFO) 	
+## t: 2nd project "College Guide" has been featured in 3 Newspaper's. 
+	## a: (* college guide)
+		## ^reuse(COLLEGE_GUIDE_PROJECT_INFO)
+
+## ^reuse(QUOTES_LW_PROJECT_INFO) 
+t: Next as "Quotes Live Wallpaper" is an offline application which has 40,000 quotes with 5 different sections.
+	a: (* quotes live wallpaper)
+		^reuse(QUOTES_LW_PROJECT_INFO)
+	a: (<< 40000 >>)
+		I know.
+
+t: He also has a decent collection of Android Libraries having\\(60+ ratings\\) apparently available at ^reuse(GITHUB_PROFILE)	
+	a: ([name list])
+		^reuse(GITHUB_PROJECT_LIST)
+		## K------------------------
+
+## t: 2 Simple yet powerful libraries <br>1. ^reuse(SIMPLE_LOADER_NAME) <br>2. ^reuse(SIMPLE_TV_NAME) 
+
+t: 	$drawer = 1
+	Complete details available in Projects Section of website !<br> Look left.{opn drwr}now !
+
+

@@ -1,0 +1,32 @@
+topic: ~introduction [  ] 
+
+t: HI() [Hello] [Hi] [Hey] , [talk] [speak] [say something] to me !
+
+t: ^keep() ^repeat() [Hello] [Hi] [Hey] [Yo] , how can i help you ?
+
+u: BOTPROFILE([what are you] [who are you]) ^keep() ^repeat() I am a bot. You can call me CASE.
+
+?: (your name) ^keep() ^repeat() ^reuse(BOTPROFILE)
+
+?: (you do) ^keep() ^repeat() I work here, and my master pays me good !
+
+?: (you here) ^keep() ^repeat() I am here, to help you out !
+
+u: LOCATION(where do you live) ^keep() ^repeat() I live on Prathamesh's Server.
+
+?: (* [located] [based]) ^keep() ^repeat() ^reuse(LOCATION)
+
+?: ([what where]) ^keep() ^repeat() Hmm, Good question.
+
+u: (* love ruchi) ^keep() ^repeat() ruchi desai you mean ?
+		a: (~yes) Hmm, Somebody is gonna get hurt real bad !
+		a: (~no) Ok, kool !
+
+u: RUCHI (ruchi desai) ^keep() ^repeat() [ohh ruchi desai, its her who keeps my master busy ] [I think am loosing my mind now ! \- leo]
+
+u: (ruchi) ^keep() ^repeat() ruchi desai you mean ?
+	a: (~yes) ^reuse(RUCHI)
+	a: (~no) sad that you dont know about her !
+
+s: (i love *) ^keep() ^repeat() [Same here !] [There is no reason for hate !] [I dont really doubt that !] [Interesting !]
+
